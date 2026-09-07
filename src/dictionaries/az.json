@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "title": "Ocaq — Psixoterapevtlərin İctimai Birliyi",
+    "description": "Fərdi və qrup terapiyası, hipnoterapiya, psixodramma və inkişaf proqramları."
+  },
+  "nav": {
+    "home": "Ana səhifə",
+    "library": "Kitabxana",
+    "specialists": "Mütəxəssislərimiz",
+    "works": "İşlərimiz",
+    "contact": "Əlaqə",
+    "whatsapp": "WhatsApp"
+  },
+  "hero": {
+    "brand": "Ocaq",
+    "tagline": "Psixoterapevtlərin İctimai Birliyi",
+    "description": "Birlikdə isinmək, birlikdə sağalmaq. Fərdi və qrup terapiyası ilə daxili gücü yenidən tapın.",
+    "ctaPrimary": "Əlaqə saxla",
+    "ctaSecondary": "Xidmətlərimiz"
+  },
+  "services": {
+    "title": "Xidmətlərimiz",
+    "subtitle": "Ocağın ətrafında toplanan peşəkar dəstək."
+  },
+  "specialists": {
+    "title": "Mütəxəssislərimiz",
+    "subtitle": "Komandamızla tanış olun.",
+    "seeAll": "Hamısına bax",
+    "pageTitle": "Mütəxəssislərimiz",
+    "pageSubtitle": "Ocaq birliyinin psixoterapevtləri."
+  },
+  "library": {
+    "title": "Kitabxana",
+    "subtitle": "Rus dilindən Azərbaycan dilinə tərcümə etdiyimiz və hazırladığımız kitablar.",
+    "seeAll": "Hamısına bax",
+    "pageTitle": "Kitabxana",
+    "pageSubtitle": "Azərbaycan dilində əvvəl mövcud olmayan materiallar — oxuyun və yükləyin.",
+    "download": "PDF yüklə",
+    "comingSoon": "Tezliklə"
+  },
+  "works": {
+    "title": "İşlərimiz",
+    "subtitle": "Təlimlər, qruplar və birlik fəaliyyətləri.",
+    "seeAll": "Hamısına bax",
+    "pageTitle": "İşlərimiz",
+    "pageSubtitle": "Ocağın gerçəkləşdirdiyi işlər və təşəbbüslər."
+  },
+  "faq": {
+    "title": "Tez-tez verilən suallar",
+    "subtitle": "Qrup terapiyası haqqında ən çox soruşulanlar."
+  },
+  "contact": {
+    "title": "Əlaqə",
+    "subtitle": "Suallarınız üçün bizə yazın və ya zəng edin.",
+    "phone": "Telefon",
+    "whatsapp": "WhatsApp-da yaz",
+    "instagram": "Instagram",
+    "cta": "Mesaj göndər"
+  },
+  "footer": {
+    "rights": "Bütün hüquqlar qorunur.",
+    "tagline": "Birlikdə isinmək, birlikdə sağalmaq."
+  },
+  "common": {
+    "backToTop": "Yuxarı qalx",
+    "openMenu": "Menyunu aç",
+    "closeMenu": "Menyunu bağla",
+    "language": "Dil"
+  },
+  "servicesItems": {
+    "individualGroup": {
+      "title": "Fərdi & Qrup terapiyası",
+      "description": "Təhlükəsiz mühitdə özünüzü tanımaq və münasibətləri sağaltmaq üçün peşəkar dəstək."
+    },
+    "hypnoPsychodrama": {
+      "title": "Hipnoterapiya & psixodramma",
+      "description": "Şüuraltı proseslər və yaşantı yolu ilə dərin dəyişim üçün metodlar."
+    },
+    "training": {
+      "title": "Təlim və inkişaf proqramları",
+      "description": "Özünüifadə, sərhədlər, özünəgüvən və emosional bacarıqların inkişafı."
+    }
+  },
+  "faqs": {
+    "frequency": {
+      "question": "Qrup terapiyası ayda neçə dəfə olur?",
+      "answer": "Həftədə 1 dəfə olur, və 2 saat davam edir."
+    },
+    "duration": {
+      "question": "Neçə ay davam edir?",
+      "answer": "6-9 ay arası."
+    },
+    "groupSize": {
+      "question": "Qrupda neçə nəfər olur?",
+      "answer": "4-10 arası."
+    },
+    "speaking": {
+      "question": "Qrupda başqalarının yanında öz problemlərimizdən danışa bilərik?",
+      "answer": "Bu çox normal sualdır. Qrup terapiyasında danışmaq məcburi deyil. Bəzən sadəcə dinləmək belə sağaldıcı olur. Zamanla insan özünü güvəndə hiss etdikcə paylaşım da təbii şəkildə artır."
+    },
+    "selection": {
+      "question": "Qrupda neçə iştirakçı olur və bu iştirakçılar hansı qayda ilə seçilir?",
+      "answer": "Qrupa qəbul öncəsi hər iştirakçı ilə fərdi ilkin görüş keçirilir. Psixoloji vəziyyət, hazırolma səviyyəsi və qrup formatına uyğunluq dəyərləndirilir. Məqsəd həm fərdin, həm də qrupun təhlükəsizliyini qorumaqdır."
+    },
+    "communication": {
+      "question": "İnsanlarla ünsiyyət qurmaqda çətinlik çəkirəm, dilim dolaşır, buna köməklik edirsiz?",
+      "answer": "Ünsiyyətdə çətinlik və dilin dolaşması adətən sosial həyəcanla əlaqəli olur. Beyin \"Təhlükə var!\" siqnalı verdikdə nitq mərkəzi bloklana bilir. Qrup terapiyasında bu vəziyyət real, amma dəstəkləyici mühitdə işlənir və zamanla insan daha rahat danışmağa başlayır."
+    },
+    "development": {
+      "question": "İnkişaf üçündür yazmısınız, tam olaraq nəyi inkişaf etdirirsiz?",
+      "answer": "Qrup terapiyasında əsasən bu sahələri inkişaf etdiririk: özünü ifadə etmə bacarığı, sosial həyəcanın azalması, sərhəd qoyma bacarığı, özünə güvən, emosiyaları tanımaq və idarə etmək, sağlam münasibət qurma bacarığı."
+    }
+  },
+  "specialistsItems": {
+    "placeholder1": {
+      "name": "Mütəxəssis Adı",
+      "role": "Psixoterapevt",
+      "bio": "Tərcümeyi-hal və ixtisas sahəsi tezliklə əlavə olunacaq."
+    },
+    "placeholder2": {
+      "name": "Mütəxəssis Adı",
+      "role": "Qrup terapevti",
+      "bio": "Tərcümeyi-hal və ixtisas sahəsi tezliklə əlavə olunacaq."
+    },
+    "placeholder3": {
+      "name": "Mütəxəssis Adı",
+      "role": "Hipnoterapevt",
+      "bio": "Tərcümeyi-hal və ixtisas sahəsi tezliklə əlavə olunacaq."
+    }
+  },
+  "booksItems": {
+    "placeholder1": {
+      "title": "Kitab adı (nümunə)",
+      "description": "Rus dilindən Azərbaycan dilinə tərcümə edilmiş material. PDF tezliklə əlavə olunacaq.",
+      "authors": "Ocaq tərcümə qrupu"
+    },
+    "placeholder2": {
+      "title": "Kitab adı (nümunə)",
+      "description": "Azərbaycan dilində əvvəl mövcud olmayan peşəkar ədəbiyyat.",
+      "authors": "Ocaq tərcümə qrupu"
+    },
+    "placeholder3": {
+      "title": "Kitab adı (nümunə)",
+      "description": "Təlim və terapiya prosesini dəstəkləyən oxu materialı.",
+      "authors": "Ocaq tərcümə qrupu"
+    }
+  },
+  "worksItems": {
+    "placeholder1": {
+      "title": "Qrup terapiyası sessiyaları",
+      "description": "Həftəlik qrup görüşləri — paylaşım, dinləmə və birlikdə böyümə.",
+      "category": "Terapiya"
+    },
+    "placeholder2": {
+      "title": "Təlim və inkişaf seminarları",
+      "description": "Özünüifadə və emosional bacarıqlar üzrə açıq təlimlər.",
+      "category": "Təlim"
+    },
+    "placeholder3": {
+      "title": "Tərcümə və nəşr işləri",
+      "description": "Peşəkar ədəbiyyatın Azərbaycan dilinə gətirilməsi.",
+      "category": "Kitabxana"
+    }
+  }
+}

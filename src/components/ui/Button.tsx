@@ -1,0 +1,64 @@
+import Link from "next/link";
+import type { ComponentProps, ReactNode } from "react";
+
+import { cn } from "@/lib/cn";
+
+type Variant = "primary" | "secondary" | "ghost" | "whatsapp";
+
+const variants: Record<Variant, string> = {
+  primary:
+    "bg-primary text-white hover:bg-primary-dark shadow-[0_8px_24px_-12px_rgba(246,149,35,0.7)]",
+  secondary: "bg-secondary text-white hover:bg-secondary-soft",
+  ghost:
+    "bg-transparent text-secondary border border-border hover:border-primary hover:text-primary-dark",
+  whatsapp: "bg-[#25D366] text-white hover:bg-[#1ebe57]",
+};
+
+type CommonProps = {
+  children: ReactNode;
+  className?: string;
+  variant?: Variant;
+};
+
+type ButtonAsButton = CommonProps &
+  Omit<ComponentProps<"button">, "className" | "children"> & {
+    href?: undefined;
+  };
+
+type ButtonAsLink = CommonProps &
+  Omit<ComponentProps<typeof Link>, "className" | "children" | "href"> & {
+    href: string;
+  };
+
+export type ButtonProps = ButtonAsButton | ButtonAsLink;
+
+const baseClass =
+  "inline-flex items-center justify-center gap-2 rounded-md px-3 py-1.5 text-sm font-semibold tracking-wide transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary";
+
+export function Button({
+  children,
+  className,
+  variant = "primary",
+  ...props
+}: ButtonProps) {
+  const classes = cn(baseClass, variants[variant], className);
+
+  if ("href" in props && props.href) {
+    const { href, ...rest } = props;
+    return (
+      <Link href={href} className={classes} {...rest}>
+        {children}
+      </Link>
+    );
+  }
+
+  return (
+    <button
+      type="button"
+      className={classes}
+      {...(props as Omit<ButtonAsButton, "children" | "className" | "variant">)}
+    >
+      {children}
+    </button>
+  );
+}

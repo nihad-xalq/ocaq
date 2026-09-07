@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "title": "Ocaq — Public Association of Psychotherapists",
+    "description": "Individual and group therapy, hypnotherapy, psychodrama, and development programs."
+  },
+  "nav": {
+    "home": "Home",
+    "library": "Library",
+    "specialists": "Our Specialists",
+    "works": "Our Work",
+    "contact": "Contact",
+    "whatsapp": "WhatsApp"
+  },
+  "hero": {
+    "brand": "Ocaq",
+    "tagline": "Public Association of Psychotherapists",
+    "description": "Warmth shared, healing shared. Rediscover inner strength through individual and group therapy.",
+    "ctaPrimary": "Get in touch",
+    "ctaSecondary": "Our services"
+  },
+  "services": {
+    "title": "Our services",
+    "subtitle": "Professional support gathered around the hearth."
+  },
+  "specialists": {
+    "title": "Our specialists",
+    "subtitle": "Meet the team.",
+    "seeAll": "See all",
+    "pageTitle": "Our specialists",
+    "pageSubtitle": "Psychotherapists of the Ocaq association."
+  },
+  "library": {
+    "title": "Library",
+    "subtitle": "Books we translated and prepared from Russian into Azerbaijani.",
+    "seeAll": "See all",
+    "pageTitle": "Library",
+    "pageSubtitle": "Materials that previously had no Azerbaijani version — read and download.",
+    "download": "Download PDF",
+    "comingSoon": "Coming soon"
+  },
+  "works": {
+    "title": "Our work",
+    "subtitle": "Trainings, groups, and association activities.",
+    "seeAll": "See all",
+    "pageTitle": "Our work",
+    "pageSubtitle": "Initiatives and programs realized by Ocaq."
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "subtitle": "What people ask most about group therapy."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Write or call us with your questions.",
+    "phone": "Phone",
+    "whatsapp": "Message on WhatsApp",
+    "instagram": "Instagram",
+    "cta": "Send a message"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "tagline": "Warmth shared, healing shared."
+  },
+  "common": {
+    "backToTop": "Back to top",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language"
+  },
+  "servicesItems": {
+    "individualGroup": {
+      "title": "Individual & Group therapy",
+      "description": "Professional support to know yourself and heal relationships in a safe space."
+    },
+    "hypnoPsychodrama": {
+      "title": "Hypnotherapy & psychodrama",
+      "description": "Methods for deep change through subconscious processes and lived experience."
+    },
+    "training": {
+      "title": "Training & development programs",
+      "description": "Growing self-expression, boundaries, confidence, and emotional skills."
+    }
+  },
+  "faqs": {
+    "frequency": {
+      "question": "How often does group therapy take place?",
+      "answer": "Once a week, lasting 2 hours."
+    },
+    "duration": {
+      "question": "How many months does it last?",
+      "answer": "Between 6 and 9 months."
+    },
+    "groupSize": {
+      "question": "How many people are in a group?",
+      "answer": "Between 4 and 10."
+    },
+    "speaking": {
+      "question": "Can we talk about our problems in front of others in the group?",
+      "answer": "This is a very normal question. Speaking is not mandatory in group therapy. Sometimes just listening is healing. Over time, as a person feels safer, sharing naturally increases."
+    },
+    "selection": {
+      "question": "How many participants are in a group and how are they selected?",
+      "answer": "Before joining, each participant has an individual intake meeting. Psychological state, readiness, and fit for the group format are assessed. The goal is to protect the safety of both the individual and the group."
+    },
+    "communication": {
+      "question": "I struggle to communicate with people and my speech gets tangled — can you help?",
+      "answer": "Difficulty communicating and tangled speech are usually linked to social anxiety. When the brain signals \"There is danger!\", the speech center can block. In group therapy this is worked through in a real but supportive environment, and over time people begin to speak more freely."
+    },
+    "development": {
+      "question": "You wrote it is for development — what exactly do you develop?",
+      "answer": "In group therapy we mainly develop: self-expression, reducing social anxiety, setting boundaries, self-confidence, recognizing and managing emotions, and building healthy relationships."
+    }
+  },
+  "specialistsItems": {
+    "placeholder1": {
+      "name": "Specialist Name",
+      "role": "Psychotherapist",
+      "bio": "Biography and specialization will be added soon."
+    },
+    "placeholder2": {
+      "name": "Specialist Name",
+      "role": "Group therapist",
+      "bio": "Biography and specialization will be added soon."
+    },
+    "placeholder3": {
+      "name": "Specialist Name",
+      "role": "Hypnotherapist",
+      "bio": "Biography and specialization will be added soon."
+    }
+  },
+  "booksItems": {
+    "placeholder1": {
+      "title": "Book title (sample)",
+      "description": "Material translated from Russian into Azerbaijani. PDF will be added soon.",
+      "authors": "Ocaq translation group"
+    },
+    "placeholder2": {
+      "title": "Book title (sample)",
+      "description": "Professional literature that previously had no Azerbaijani version.",
+      "authors": "Ocaq translation group"
+    },
+    "placeholder3": {
+      "title": "Book title (sample)",
+      "description": "Reading material that supports training and therapy processes.",
+      "authors": "Ocaq translation group"
+    }
+  },
+  "worksItems": {
+    "placeholder1": {
+      "title": "Group therapy sessions",
+      "description": "Weekly group meetings — sharing, listening, and growing together.",
+      "category": "Therapy"
+    },
+    "placeholder2": {
+      "title": "Training and development seminars",
+      "description": "Open trainings on self-expression and emotional skills.",
+      "category": "Training"
+    },
+    "placeholder3": {
+      "title": "Translation and publishing",
+      "description": "Bringing professional literature into Azerbaijani.",
+      "category": "Library"
+    }
+  }
+}

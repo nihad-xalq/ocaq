@@ -1,0 +1,3 @@
+# Placeholder directory for library PDF files.
+# Add files here and reference them from src/data/books.ts, e.g.:
+# pdfPath: "/library/my-book.pdf"
