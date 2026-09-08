@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/ui/FadeIn";
+import { WhatsAppButton } from "@/components/ui/WhatsAppLink";
 import { site } from "@/data/site";
 import type { Dictionary } from "@/i18n/get-dictionary";
-import { getTelHref, getWhatsAppUrl } from "@/lib/whatsapp";
+import { getTelHref } from "@/lib/whatsapp";
 
 type ContactContentProps = {
   dict: Dictionary;
@@ -41,15 +41,9 @@ export function ContactContent({ dict }: ContactContentProps) {
             <p className="text-xs font-semibold uppercase tracking-wider text-primary-dark">
               {dict.contact.whatsapp}
             </p>
-            <Button
-              href={getWhatsAppUrl()}
-              variant="whatsapp"
-              className="mt-4"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <WhatsAppButton messages={dict.whatsappMessages} className="mt-4">
               {dict.contact.cta}
-            </Button>
+            </WhatsAppButton>
           </div>
         </FadeIn>
 

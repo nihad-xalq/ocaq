@@ -66,6 +66,14 @@
     "cta": "Send a message",
     "map": "Location"
   },
+  "whatsappMessages": {
+    "therapies": "I would like to get information about the therapies.",
+    "library": "I would like to get information about the library.",
+    "specialists": "I would like to get information about your specialists.",
+    "works": "I would like to get information about your work.",
+    "contact": "I would like to get in touch.",
+    "specialist": "I would like to get information about {{name}}."
+  },
   "footer": {
     "rights": "All rights reserved.",
     "tagline": "Warmth shared, healing shared."

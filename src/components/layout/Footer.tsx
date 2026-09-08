@@ -3,12 +3,13 @@ import Link from "next/link";
 
 import { Container } from "@/components/ui/Container";
 import { InstagramIcon, PhoneIcon, WhatsAppIcon } from "@/components/ui/icons";
+import { WhatsAppLink } from "@/components/ui/WhatsAppLink";
 import { site } from "@/data/site";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import type { Locale } from "@/i18n/config";
 import { localePath } from "@/i18n/locale-path";
 import { routes } from "@/i18n/paths";
-import { getTelHref, getWhatsAppUrl } from "@/lib/whatsapp";
+import { getTelHref } from "@/lib/whatsapp";
 import { formatYear } from "@/utils/format";
 
 type FooterProps = {
@@ -55,15 +56,13 @@ export function Footer({ locale, dict }: FooterProps) {
               </a>
             </li>
             <li>
-              <a
-                href={getWhatsAppUrl()}
-                target="_blank"
-                rel="noopener noreferrer"
+              <WhatsAppLink
+                messages={dict.whatsappMessages}
                 className="inline-flex items-center gap-2.5 hover:text-primary transition-colors"
               >
                 <WhatsAppIcon className="shrink-0 text-primary" />
                 WhatsApp
-              </a>
+              </WhatsAppLink>
             </li>
             <li>
               <a

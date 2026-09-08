@@ -1,13 +1,19 @@
-import { getWhatsAppUrl } from "@/lib/whatsapp";
+"use client";
+
+import { useWhatsAppHref } from "@/hooks/use-whatsapp-href";
+import type { WhatsAppMessages } from "@/lib/whatsapp";
 
 type WhatsAppWidgetProps = {
   label: string;
+  messages: WhatsAppMessages;
 };
 
-export function WhatsAppWidget({ label }: WhatsAppWidgetProps) {
+export function WhatsAppWidget({ label, messages }: WhatsAppWidgetProps) {
+  const href = useWhatsAppHref(messages);
+
   return (
     <a
-      href={getWhatsAppUrl()}
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={label}

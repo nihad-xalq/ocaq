@@ -47,7 +47,10 @@ export default async function LangLayout({
       <Header locale={locale} dict={dict} />
       <main className="flex-1">{children}</main>
       <Footer locale={locale} dict={dict} />
-      <WhatsAppWidget label={dict.nav.whatsapp} />
+      <WhatsAppWidget
+        label={dict.nav.whatsapp}
+        messages={dict.whatsappMessages}
+      />
       <BackToTop label={dict.common.backToTop} />
     </>
   );

@@ -6,15 +6,14 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
-import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { WhatsAppButton } from "@/components/ui/WhatsAppLink";
 import { site } from "@/data/site";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import type { Locale } from "@/i18n/config";
 import { isActivePath, localePath } from "@/i18n/locale-path";
 import { routes } from "@/i18n/paths";
 import { cn } from "@/lib/cn";
-import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 type HeaderProps = {
   locale: Locale;
@@ -78,15 +77,12 @@ export function Header({ locale, dict }: HeaderProps) {
 
         <div className="flex items-center gap-2 sm:gap-3">
           <LanguageSwitcher locale={locale} label={dict.common.language} />
-          <Button
-            href={getWhatsAppUrl()}
-            variant="whatsapp"
+          <WhatsAppButton
+            messages={dict.whatsappMessages}
             className="hidden sm:inline-flex"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             {dict.nav.whatsapp}
-          </Button>
+          </WhatsAppButton>
           <button
             type="button"
             className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-border text-secondary lg:hidden"
@@ -151,16 +147,13 @@ export function Header({ locale, dict }: HeaderProps) {
               </Link>
             );
           })}
-          <Button
-            href={getWhatsAppUrl()}
-            variant="whatsapp"
+          <WhatsAppButton
+            messages={dict.whatsappMessages}
             className="mt-2"
-            target="_blank"
-            rel="noopener noreferrer"
             onClick={() => setOpen(false)}
           >
             {dict.nav.whatsapp}
-          </Button>
+          </WhatsAppButton>
         </Container>
       </div>
     </header>

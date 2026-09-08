@@ -1,8 +1,10 @@
 import Image from "next/image";
 
+import { WhatsAppLink } from "@/components/ui/WhatsAppLink";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import type { Specialist } from "@/types/content";
 import { cn } from "@/lib/cn";
+import { namedWhatsAppMessage } from "@/lib/whatsapp";
 
 type SpecialistCardProps = {
   specialist: Specialist;
@@ -46,6 +48,16 @@ export function SpecialistCard({
           {item.role}
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted">{item.bio}</p>
+        <WhatsAppLink
+          messages={dict.whatsappMessages}
+          message={namedWhatsAppMessage(
+            dict.whatsappMessages.specialist,
+            item.name,
+          )}
+          className="mt-auto pt-4 text-sm font-semibold text-primary-dark hover:text-primary"
+        >
+          {dict.contact.whatsapp}
+        </WhatsAppLink>
       </div>
     </article>
   );

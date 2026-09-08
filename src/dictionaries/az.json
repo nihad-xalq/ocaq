@@ -66,6 +66,14 @@
     "cta": "Mesaj göndər",
     "map": "Ünvan"
   },
+  "whatsappMessages": {
+    "therapies": "Terapiyalar haqqında məlumat istəyirəm.",
+    "library": "Kitabxana haqqında məlumat istəyirəm.",
+    "specialists": "Mütəxəssisləriniz haqqında məlumat istəyirəm.",
+    "works": "İşləriniz haqqında məlumat istəyirəm.",
+    "contact": "Sizinlə əlaqə saxlamaq istəyirəm.",
+    "specialist": "{{name}} haqqında məlumat istəyirəm."
+  },
   "footer": {
     "rights": "Bütün hüquqlar qorunur.",
     "tagline": "Birlikdə isinmək, birlikdə sağalmaq."

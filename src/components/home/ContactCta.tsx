@@ -5,9 +5,10 @@ import {
   PhoneIcon,
   WhatsAppIcon,
 } from "@/components/ui/icons";
+import { WhatsAppLink } from "@/components/ui/WhatsAppLink";
 import { site } from "@/data/site";
 import type { Dictionary } from "@/i18n/get-dictionary";
-import { getTelHref, getWhatsAppUrl } from "@/lib/whatsapp";
+import { getTelHref } from "@/lib/whatsapp";
 
 type ContactCtaProps = {
   dict: Dictionary;
@@ -47,10 +48,8 @@ export function ContactCta({ dict }: ContactCtaProps) {
           </FadeIn>
 
           <FadeIn delay={60}>
-            <a
-              href={getWhatsAppUrl()}
-              target="_blank"
-              rel="noopener noreferrer"
+            <WhatsAppLink
+              messages={dict.whatsappMessages}
               className="flex items-start gap-4 rounded-xl border border-border bg-surface p-5 transition-colors hover:border-primary/50"
             >
               <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#25D366]/15 text-[#1ebe57]">
@@ -64,7 +63,7 @@ export function ContactCta({ dict }: ContactCtaProps) {
                   {site.phoneDisplay}
                 </span>
               </span>
-            </a>
+            </WhatsAppLink>
           </FadeIn>
 
           <FadeIn delay={120} className="sm:col-span-2 lg:col-span-1">
