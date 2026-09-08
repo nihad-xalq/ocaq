@@ -13,11 +13,12 @@
   },
   "hero": {
     "brand": "Ocaq",
-    "tagline": "Psixoterapevtlərin İctimai Birliyi",
-    "headline": "Birlikdə isinmək, birlikdə sağalmaq.",
+    "tagline": "\"Ocaq\" Psixoterapevtlərin İctimai Birliyi",
+    "headline": "Qaranlığı lənətləməkdənsə,\n1 şam yandır",
     "description": "Fərdi və qrup terapiyası ilə daxili gücü yenidən tapın.",
     "ctaPrimary": "Əlaqə saxla",
     "ctaSecondary": "Xidmətlərimiz",
+    "imageAlt": "Ocaq birliyinin mütəxəssisləri",
     "points": [
       "Fərdi və qrup terapiyası",
       "Peşəkar mütəxəssislər",

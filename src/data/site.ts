@@ -2,6 +2,7 @@ export const site = {
   name: "Ocaq",
   fullName: "Ocaq Psixoterapevtlərin İctimai Birliyi",
   logo: "/logo.jpg",
+  heroImage: "/specialists/team-photo-1.jpeg",
   phoneDisplay: "050 358 46 99",
   phoneTel: "+994503584699",
   whatsappNumber: "994503584699",

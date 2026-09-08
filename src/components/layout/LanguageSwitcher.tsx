@@ -56,22 +56,22 @@ export function LanguageSwitcher({ locale, label }: LanguageSwitcherProps) {
         aria-controls={menuId}
         onClick={() => setOpen((value) => !value)}
         className={cn(
-          "inline-flex h-9 items-center gap-1.5 rounded-lg border border-border bg-surface px-3 text-xs font-semibold tracking-[0.14em] text-secondary transition-colors cursor-pointer",
-          "hover:border-primary/45 hover:bg-primary-soft/70",
+          "inline-flex h-10 items-center gap-1.5 rounded-xl border border-border bg-surface px-3.5 text-[13px] font-semibold tracking-[0.12em] text-secondary transition-all duration-200 cursor-pointer",
+          "hover:border-primary/55 hover:bg-primary-soft hover:text-primary-dark",
           "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
-          open && "border-primary/50 bg-primary-soft",
+          open && "border-primary/60 bg-primary-soft text-primary-dark",
         )}
       >
         <span>{localeLabels[locale]}</span>
         <svg
-          width="12"
-          height="12"
+          width="11"
+          height="11"
           viewBox="0 0 12 12"
           fill="none"
           aria-hidden="true"
           className={cn(
             "text-muted transition-transform duration-200",
-            open && "rotate-180",
+            open && "rotate-180 text-primary-dark",
           )}
         >
           <path

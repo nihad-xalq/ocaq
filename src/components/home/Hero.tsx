@@ -6,6 +6,7 @@ import { localePath } from "@/i18n/locale-path";
 import type { Locale } from "@/i18n/config";
 import { routes } from "@/i18n/paths";
 import { site } from "@/data/site";
+import { cn } from "@/lib/cn";
 import Image from "next/image";
 
 type HeroProps = {
@@ -27,7 +28,12 @@ export function Hero({ locale, dict }: HeroProps) {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-primary-dark">
               {dict.hero.tagline}
             </p>
-            <h1 className="mt-4 max-w-xl font-display text-4xl font-semibold tracking-tight text-secondary sm:text-5xl lg:text-[3.4rem] lg:leading-[1.12]">
+            <h1
+              className={cn(
+                "mt-4 whitespace-pre-line font-display text-4xl font-semibold tracking-tight text-secondary sm:text-5xl lg:text-[2.8rem] lg:leading-[1.12]",
+                locale === "az" ? "max-w-2xl" : "max-w-xl",
+              )}
+            >
               {dict.hero.headline}
             </h1>
             <p className="mt-5 max-w-lg text-lg leading-relaxed text-muted sm:text-xl">
@@ -63,21 +69,18 @@ export function Hero({ locale, dict }: HeroProps) {
         <FadeIn
           immediate
           delay={100}
-          className="relative mx-auto w-full max-w-md lg:max-w-none"
+          className="relative mx-auto w-full max-w-lg lg:max-w-none"
         >
           <div className="absolute -inset-4 rounded-4xl bg-primary-soft/70 lg:-inset-6" />
-          <div className="relative overflow-hidden rounded-2xl border border-border bg-surface px-6 py-10 sm:px-10 sm:py-14">
-            <div className="relative mx-auto h-48 w-full sm:h-64 lg:h-72">
-              <Image
-                src={site.logo}
-                alt={site.name}
-                priority
-                loading="eager"
-                fill
-                sizes="(max-width: 1024px) 90vw, 480px"
-                className="object-contain"
-              />
-            </div>
+          <div className="relative aspect-4/3 overflow-hidden rounded-2xl border border-border bg-surface">
+            <Image
+              src={site.heroImage}
+              alt={dict.hero.imageAlt}
+              priority
+              fill
+              sizes="(max-width: 1024px) 90vw, 520px"
+              className="object-cover object-[center_30%]"
+            />
           </div>
         </FadeIn>
       </Container>

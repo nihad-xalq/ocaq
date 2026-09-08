@@ -1,14 +1,13 @@
 "use client";
 
-import { useState } from "react";
-
-import { FaqItem } from "@/components/home/FaqItem";
-import { Container } from "@/components/ui/Container";
-import { FadeIn } from "@/components/ui/FadeIn";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { faqs } from "@/data/faqs";
 import type { Dictionary } from "@/i18n/get-dictionary";
+import { Container } from "@/components/ui/Container";
+import { FaqItem } from "@/components/home/FaqItem";
+import { FadeIn } from "@/components/ui/FadeIn";
 import type { FaqId } from "@/types/content";
+import { faqs } from "@/data/faqs";
+import { useState } from "react";
 
 type FaqSectionProps = {
   dict: Dictionary;

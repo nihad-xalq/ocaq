@@ -14,10 +14,11 @@
   "hero": {
     "brand": "Ocaq",
     "tagline": "Public Association of Psychotherapists",
-    "headline": "Warmth shared, healing shared.",
+    "headline": "It is better to light a candle than to curse the darkness",
     "description": "Rediscover inner strength through individual and group therapy.",
     "ctaPrimary": "Get in touch",
     "ctaSecondary": "Our services",
+    "imageAlt": "The Ocaq team of specialists",
     "points": [
       "Individual and group therapy",
       "Professional specialists",

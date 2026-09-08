@@ -1,12 +1,11 @@
-import type { Metadata } from "next";
-import { notFound } from "next/navigation";
-
 import { WorkCard } from "@/components/works/WorkCard";
 import { Container } from "@/components/ui/Container";
-import { FadeIn } from "@/components/ui/FadeIn";
-import { works } from "@/data/works";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { isLocale, type Locale } from "@/i18n/config";
+import { FadeIn } from "@/components/ui/FadeIn";
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import { works } from "@/data/works";
 
 export async function generateMetadata({
   params,

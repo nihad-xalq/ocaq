@@ -16,7 +16,7 @@ export function BackToTop({ label }: BackToTopProps) {
       aria-label={label}
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       className={cn(
-        "fixed right-5 bottom-5 z-40 flex h-11 w-11 items-center justify-center rounded-full border border-border bg-surface text-secondary shadow-md transition-all duration-300 hover:border-primary hover:text-primary cursor-pointer",
+        "fixed right-6 bottom-20 z-40 flex h-11 w-11 items-center justify-center rounded-full border border-border bg-surface text-secondary shadow-md transition-all duration-300 hover:border-primary hover:text-primary cursor-pointer",
         visible
           ? "translate-y-0 opacity-100"
           : "pointer-events-none translate-y-3 opacity-0",
@@ -30,7 +30,7 @@ export function BackToTop({ label }: BackToTopProps) {
         aria-hidden="true"
       >
         <path
-          d="M12 19V5M12 5L5 12M12 5L19 12"
+          d="M6 15L12 9L18 15"
           stroke="currentColor"
           strokeWidth="2"
           strokeLinecap="round"
