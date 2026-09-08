@@ -69,6 +69,24 @@ export function ContactContent({ dict }: ContactContentProps) {
           </div>
         </FadeIn>
       </div>
+
+      <FadeIn delay={180}>
+        <div className="mt-12">
+          <p className="text-xs font-semibold uppercase tracking-wider text-primary-dark">
+            {dict.contact.map}
+          </p>
+          <div className="mt-4 overflow-hidden rounded-lg border border-border bg-surface">
+            <iframe
+              src={site.mapsEmbedUrl}
+              title={dict.contact.map}
+              className="h-80 w-full border-0 sm:h-[450px]"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+            />
+          </div>
+        </div>
+      </FadeIn>
     </Container>
   );
 }

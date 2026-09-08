@@ -62,7 +62,8 @@
     "phone": "Телефон",
     "whatsapp": "Написать в WhatsApp",
     "instagram": "Instagram",
-    "cta": "Отправить сообщение"
+    "cta": "Отправить сообщение",
+    "map": "Адрес"
   },
   "footer": {
     "rights": "Все права защищены.",

@@ -62,7 +62,8 @@
     "phone": "Phone",
     "whatsapp": "Message on WhatsApp",
     "instagram": "Instagram",
-    "cta": "Send a message"
+    "cta": "Send a message",
+    "map": "Location"
   },
   "footer": {
     "rights": "All rights reserved.",
