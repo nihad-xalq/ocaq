@@ -17,7 +17,7 @@ type Touched<T> = {
 type UseFormOptions<T extends Record<string, string>> = {
   initialValues: T;
   validate: (values: T) => FormErrors<T>;
-  onSubmit: (values: T) => void | Promise<void>;
+  onSubmit: (values: T) => void | boolean | Promise<void | boolean>;
 };
 
 function hasErrors<T>(errors: FormErrors<T>) {
@@ -80,8 +80,10 @@ export function useForm<T extends Record<string, string>>({
 
     setIsSubmitting(true);
     try {
-      await onSubmit(values);
-      reset();
+      const result = await onSubmit(values);
+      if (result !== false) reset();
+    } catch {
+      // Keep values so the user can retry after a failed submit.
     } finally {
       setIsSubmitting(false);
     }

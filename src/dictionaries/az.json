@@ -79,6 +79,7 @@
       "submit": "Göndər",
       "submitting": "Göndərilir...",
       "success": "Müraciətiniz qəbul olundu. Tezliklə sizinlə əlaqə saxlayacağıq.",
+      "error": "Göndərmək alınmadı. Bir az sonra yenidən cəhd edin.",
       "required": "Bu xana mütləqdir.",
       "invalidPhone": "Düzgün telefon nömrəsi daxil edin.",
       "invalidEmail": "Düzgün e-poçt ünvanı daxil edin."

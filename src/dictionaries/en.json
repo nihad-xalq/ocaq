@@ -79,6 +79,7 @@
       "submit": "Send",
       "submitting": "Sending...",
       "success": "Your request was received. We will get back to you soon.",
+      "error": "Could not send your request. Please try again in a moment.",
       "required": "This field is required.",
       "invalidPhone": "Enter a valid phone number.",
       "invalidEmail": "Enter a valid email address."

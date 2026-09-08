@@ -3,13 +3,15 @@ import { ContactForm } from "@/components/form/ContactForm";
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { site } from "@/data/site";
+import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
 
 type ContactContentProps = {
+  locale: Locale;
   dict: Dictionary;
 };
 
-export function ContactContent({ dict }: ContactContentProps) {
+export function ContactContent({ locale, dict }: ContactContentProps) {
   return (
     <Container className="py-16 sm:py-24">
       <FadeIn immediate>
@@ -23,9 +25,9 @@ export function ContactContent({ dict }: ContactContentProps) {
 
       <div className="mt-12 grid items-start gap-8 lg:grid-cols-2 lg:gap-12">
         <ContactChannels dict={dict} />
-        <FadeIn delay={80}>
-          <ContactForm copy={dict.contact.form} />
-        </FadeIn>
+          <FadeIn delay={80}>
+            <ContactForm copy={dict.contact.form} locale={locale} />
+          </FadeIn>
       </div>
 
       <FadeIn delay={180}>

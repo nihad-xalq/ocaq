@@ -7,23 +7,30 @@ import { TextInput } from "@/components/form/TextInput";
 import { Button } from "@/components/ui/Button";
 import { useToast } from "@/components/ui/Toast";
 import { useForm } from "@/hooks/use-form";
+import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import {
   emptyContactForm,
+  submitContactForm,
   validateContactForm,
 } from "@/lib/contact-form";
 
 type ContactFormProps = {
   copy: Dictionary["contact"]["form"];
+  locale: Locale;
 };
 
-export function ContactForm({ copy }: ContactFormProps) {
+export function ContactForm({ copy, locale }: ContactFormProps) {
   const toast = useToast();
   const { handleSubmit, fieldProps, isSubmitting } = useForm({
     initialValues: emptyContactForm,
     validate: (values) => validateContactForm(values, copy),
-    onSubmit: async () => {
-      await new Promise((resolve) => setTimeout(resolve, 500));
+    onSubmit: async (values) => {
+      const ok = await submitContactForm({ ...values, locale });
+      if (!ok) {
+        toast.error(copy.error);
+        return false;
+      }
       toast.success(copy.success);
     },
   });

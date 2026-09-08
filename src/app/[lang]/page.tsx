@@ -24,7 +24,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
       <LibraryPreview locale={locale} dict={dict} />
       <WorksPreview locale={locale} dict={dict} />
       <FaqSection dict={dict} />
-      <ContactCta dict={dict} />
+      <ContactCta locale={locale} dict={dict} />
     </>
   );
 }
