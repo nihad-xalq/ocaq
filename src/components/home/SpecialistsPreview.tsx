@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { FadeIn } from "@/components/ui/FadeIn";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SpecialistCard } from "@/components/specialists/SpecialistCard";
 import {
@@ -21,25 +22,29 @@ export function SpecialistsPreview({ locale, dict }: SpecialistsPreviewProps) {
 
   return (
     <Container as="section" className="py-20 sm:py-24">
-      <SectionHeading
-        title={dict.specialists.title}
-        subtitle={dict.specialists.subtitle}
-        action={
-          <Button
-            href={localePath(locale, `/${routes.specialists}`)}
-            variant="ghost"
-          >
-            {dict.specialists.seeAll}
-          </Button>
-        }
-      />
+      <FadeIn>
+        <SectionHeading
+          title={dict.specialists.title}
+          subtitle={dict.specialists.subtitle}
+          action={
+            <Button
+              href={localePath(locale, `/${routes.specialists}`)}
+              variant="ghost"
+            >
+              {dict.specialists.seeAll}
+            </Button>
+          }
+        />
+      </FadeIn>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {items.map((specialist) => (
-          <SpecialistCard
-            key={specialist.id}
-            specialist={specialist}
-            dict={dict}
-          />
+        {items.map((specialist, index) => (
+          <FadeIn key={specialist.id} delay={index * 60} className="h-full">
+            <SpecialistCard
+              specialist={specialist}
+              dict={dict}
+              className="h-full"
+            />
+          </FadeIn>
         ))}
       </div>
     </Container>

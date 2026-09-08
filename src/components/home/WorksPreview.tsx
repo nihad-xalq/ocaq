@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { FadeIn } from "@/components/ui/FadeIn";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { WorkCard } from "@/components/works/WorkCard";
 import { works, worksPreviewCount } from "@/data/works";
@@ -18,18 +19,22 @@ export function WorksPreview({ locale, dict }: WorksPreviewProps) {
 
   return (
     <Container as="section" className="py-20 sm:py-24">
-      <SectionHeading
-        title={dict.works.title}
-        subtitle={dict.works.subtitle}
-        action={
-          <Button href={localePath(locale, `/${routes.works}`)} variant="ghost">
-            {dict.works.seeAll}
-          </Button>
-        }
-      />
+      <FadeIn>
+        <SectionHeading
+          title={dict.works.title}
+          subtitle={dict.works.subtitle}
+          action={
+            <Button href={localePath(locale, `/${routes.works}`)} variant="ghost">
+              {dict.works.seeAll}
+            </Button>
+          }
+        />
+      </FadeIn>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {items.map((work) => (
-          <WorkCard key={work.id} work={work} dict={dict} />
+        {items.map((work, index) => (
+          <FadeIn key={work.id} delay={index * 60} className="h-full">
+            <WorkCard work={work} dict={dict} className="h-full" />
+          </FadeIn>
         ))}
       </div>
     </Container>

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 
 import { WorkCard } from "@/components/works/WorkCard";
 import { Container } from "@/components/ui/Container";
+import { FadeIn } from "@/components/ui/FadeIn";
 import { works } from "@/data/works";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { isLocale, type Locale } from "@/i18n/config";
@@ -30,15 +31,19 @@ export default async function WorksPage({
 
   return (
     <Container className="py-16 sm:py-24">
-      <div className="max-w-2xl">
-        <h1 className="font-display text-4xl font-semibold tracking-tight text-secondary sm:text-5xl">
-          {dict.works.pageTitle}
-        </h1>
-        <p className="mt-4 text-lg text-muted">{dict.works.pageSubtitle}</p>
-      </div>
+      <FadeIn immediate>
+        <div className="max-w-2xl">
+          <h1 className="font-display text-4xl font-semibold tracking-tight text-secondary sm:text-5xl">
+            {dict.works.pageTitle}
+          </h1>
+          <p className="mt-4 text-lg text-muted">{dict.works.pageSubtitle}</p>
+        </div>
+      </FadeIn>
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {works.map((work) => (
-          <WorkCard key={work.id} work={work} dict={dict} />
+        {works.map((work, index) => (
+          <FadeIn key={work.id} delay={index * 60} className="h-full">
+            <WorkCard work={work} dict={dict} className="h-full" />
+          </FadeIn>
         ))}
       </div>
     </Container>
