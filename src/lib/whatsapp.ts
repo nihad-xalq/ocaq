@@ -19,7 +19,7 @@ export function getWhatsAppUrl(message?: string): string {
 
 export function getTelHref(): string {
   return `tel:${site.phoneTel}`;
-}
+} 
 
 export function namedWhatsAppMessage(template: string, name: string): string {
   return template.replace(/\{\{name\}\}/g, name);
