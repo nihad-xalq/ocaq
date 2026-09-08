@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
@@ -10,7 +11,7 @@ import { Container } from "@/components/ui/Container";
 import { site } from "@/data/site";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import type { Locale } from "@/i18n/config";
-import { localePath } from "@/i18n/locale-path";
+import { isActivePath, localePath } from "@/i18n/locale-path";
 import { routes } from "@/i18n/paths";
 import { cn } from "@/lib/cn";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
@@ -22,6 +23,7 @@ type HeaderProps = {
 
 export function Header({ locale, dict }: HeaderProps) {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname() || "/";
 
   const links = [
     { href: localePath(locale, "/"), label: dict.nav.home },
@@ -53,15 +55,25 @@ export function Header({ locale, dict }: HeaderProps) {
         </Link>
 
         <nav className="hidden items-center gap-6 lg:flex" aria-label="Main">
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-sm font-medium text-muted transition-colors hover:text-secondary"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {links.map((link) => {
+            const active = isActivePath(pathname, link.href);
+
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                aria-current={active ? "page" : undefined}
+                className={cn(
+                  "relative text-sm font-medium transition-colors after:absolute after:inset-x-0 after:-bottom-1 after:h-0.5 after:rounded-full after:bg-primary",
+                  active
+                    ? "text-secondary after:opacity-100"
+                    : "text-muted after:opacity-0 hover:text-secondary",
+                )}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </nav>
 
         <div className="flex items-center gap-2 sm:gap-3">
@@ -119,16 +131,26 @@ export function Header({ locale, dict }: HeaderProps) {
         )}
       >
         <Container className="flex flex-col gap-1 py-3">
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              onClick={() => setOpen(false)}
-              className="rounded-md px-3 py-2.5 text-sm font-medium text-secondary hover:bg-primary-soft"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {links.map((link) => {
+            const active = isActivePath(pathname, link.href);
+
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                aria-current={active ? "page" : undefined}
+                onClick={() => setOpen(false)}
+                className={cn(
+                  "rounded-md px-3 py-2.5 text-sm font-medium",
+                  active
+                    ? "bg-primary-soft text-primary-dark"
+                    : "text-secondary hover:bg-primary-soft",
+                )}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
           <Button
             href={getWhatsAppUrl()}
             variant="whatsapp"

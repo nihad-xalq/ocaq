@@ -46,3 +46,15 @@ function normalizePath(path: string): string {
   const withSlash = path.startsWith("/") ? path : `/${path}`;
   return withSlash.replace(/\/$/, "") || "/";
 }
+
+/** True when `pathname` is the given nav `href` (locale-aware; home is exact). */
+export function isActivePath(pathname: string, href: string): boolean {
+  const current = stripLocaleFromPathname(pathname).pathname;
+  const target = stripLocaleFromPathname(href).pathname;
+
+  if (target === "/") {
+    return current === "/";
+  }
+
+  return current === target || current.startsWith(`${target}/`);
+}
