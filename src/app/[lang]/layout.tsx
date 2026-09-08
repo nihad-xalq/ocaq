@@ -5,6 +5,7 @@ import { DocumentLang } from "@/components/layout/DocumentLang";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { BackToTop } from "@/components/ui/BackToTop";
+import { ToastProvider } from "@/components/ui/Toast";
 import { WhatsAppWidget } from "@/components/ui/WhatsAppWidget";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { isLocale, locales, type Locale } from "@/i18n/config";
@@ -44,14 +45,16 @@ export default async function LangLayout({
   return (
     <>
       <DocumentLang lang={locale} />
-      <Header locale={locale} dict={dict} />
-      <main className="flex-1">{children}</main>
-      <Footer locale={locale} dict={dict} />
-      <WhatsAppWidget
-        label={dict.nav.whatsapp}
-        messages={dict.whatsappMessages}
-      />
-      <BackToTop label={dict.common.backToTop} />
+      <ToastProvider dismissLabel={dict.common.dismiss}>
+        <Header locale={locale} dict={dict} />
+        <main className="flex-1">{children}</main>
+        <Footer locale={locale} dict={dict} />
+        <WhatsAppWidget
+          label={dict.nav.whatsapp}
+          messages={dict.whatsappMessages}
+        />
+        <BackToTop label={dict.common.backToTop} />
+      </ToastProvider>
     </>
   );
 }

@@ -64,7 +64,25 @@
     "whatsapp": "Message on WhatsApp",
     "instagram": "Instagram",
     "cta": "Send a message",
-    "map": "Location"
+    "map": "Location",
+    "form": {
+      "title": "Application form",
+      "fullName": "Full name",
+      "fullNamePlaceholder": "Your first and last name",
+      "phone": "Phone",
+      "phonePlaceholder": "050 358 46 99",
+      "email": "Email",
+      "emailPlaceholder": "email@example.com",
+      "message": "Message",
+      "messagePlaceholder": "Write a short note...",
+      "optional": "optional",
+      "submit": "Send",
+      "submitting": "Sending...",
+      "success": "Your request was received. We will get back to you soon.",
+      "required": "This field is required.",
+      "invalidPhone": "Enter a valid phone number.",
+      "invalidEmail": "Enter a valid email address."
+    }
   },
   "whatsappMessages": {
     "therapies": "I would like to get information about the therapies.",
@@ -82,7 +100,8 @@
     "backToTop": "Back to top",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "language": "Language"
+    "language": "Language",
+    "dismiss": "Close"
   },
   "notFound": {
     "title": "Page not found",

@@ -64,7 +64,25 @@
     "whatsapp": "WhatsApp-da yaz",
     "instagram": "Instagram",
     "cta": "Mesaj göndər",
-    "map": "Ünvan"
+    "map": "Ünvan",
+    "form": {
+      "title": "Müraciət formu",
+      "fullName": "Ad, soyad",
+      "fullNamePlaceholder": "Adınız və soyadınız",
+      "phone": "Telefon",
+      "phonePlaceholder": "050 358 46 99",
+      "email": "E-poçt",
+      "emailPlaceholder": "email@example.com",
+      "message": "Mesaj",
+      "messagePlaceholder": "Qısa şəkildə yazın...",
+      "optional": "istəyə bağlı",
+      "submit": "Göndər",
+      "submitting": "Göndərilir...",
+      "success": "Müraciətiniz qəbul olundu. Tezliklə sizinlə əlaqə saxlayacağıq.",
+      "required": "Bu xana mütləqdir.",
+      "invalidPhone": "Düzgün telefon nömrəsi daxil edin.",
+      "invalidEmail": "Düzgün e-poçt ünvanı daxil edin."
+    }
   },
   "whatsappMessages": {
     "therapies": "Terapiyalar haqqında məlumat istəyirəm.",
@@ -82,7 +100,8 @@
     "backToTop": "Yuxarı qalx",
     "openMenu": "Menyunu aç",
     "closeMenu": "Menyunu bağla",
-    "language": "Dil"
+    "language": "Dil",
+    "dismiss": "Bağla"
   },
   "notFound": {
     "title": "Səhifə tapılmadı",

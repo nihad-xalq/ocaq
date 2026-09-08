@@ -65,12 +65,27 @@ body {
   }
 }
 
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .fade-in-up-pending {
   opacity: 0;
 }
 
 .fade-in-up {
   animation: fade-in-up 0.4s ease-out both;
+}
+
+.toast-in {
+  animation: toast-in 0.25s ease-out both;
 }
 
 @media (scripting: none) {
@@ -85,7 +100,8 @@ body {
   }
 
   .fade-in-up,
-  .fade-in-up-pending {
+  .fade-in-up-pending,
+  .toast-in {
     animation: none;
     opacity: 1;
     transform: none;

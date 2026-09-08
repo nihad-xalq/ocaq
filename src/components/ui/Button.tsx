@@ -35,7 +35,7 @@ type ButtonAsLink = CommonProps &
 export type ButtonProps = ButtonAsButton | ButtonAsLink;
 
 const baseClass =
-  "inline-flex items-center justify-center gap-2 rounded-md px-3 py-1.5 text-sm font-semibold tracking-wide transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary";
+  "inline-flex items-center justify-center gap-2 rounded-md px-3 py-1.5 text-sm font-semibold tracking-wide transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer";
 
 export function Button({
   children,

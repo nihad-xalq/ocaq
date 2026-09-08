@@ -1,9 +1,9 @@
+import { ContactChannels } from "@/components/contact/ContactChannels";
+import { ContactForm } from "@/components/form/ContactForm";
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/ui/FadeIn";
-import { WhatsAppButton } from "@/components/ui/WhatsAppLink";
 import { site } from "@/data/site";
 import type { Dictionary } from "@/i18n/get-dictionary";
-import { getTelHref } from "@/lib/whatsapp";
 
 type ContactContentProps = {
   dict: Dictionary;
@@ -21,46 +21,10 @@ export function ContactContent({ dict }: ContactContentProps) {
         </div>
       </FadeIn>
 
-      <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        <FadeIn delay={0}>
-          <div className="rounded-lg border border-border bg-surface p-6">
-            <p className="text-xs font-semibold uppercase tracking-wider text-primary-dark">
-              {dict.contact.phone}
-            </p>
-            <a
-              href={getTelHref()}
-              className="mt-3 block font-display text-2xl font-semibold text-secondary hover:text-primary-dark"
-            >
-              {site.phoneDisplay}
-            </a>
-          </div>
-        </FadeIn>
-
-        <FadeIn delay={60}>
-          <div className="rounded-lg border border-border bg-surface p-6">
-            <p className="text-xs font-semibold uppercase tracking-wider text-primary-dark">
-              {dict.contact.whatsapp}
-            </p>
-            <WhatsAppButton messages={dict.whatsappMessages} className="mt-4">
-              {dict.contact.cta}
-            </WhatsAppButton>
-          </div>
-        </FadeIn>
-
-        <FadeIn delay={120}>
-          <div className="rounded-lg border border-border bg-surface p-6">
-            <p className="text-xs font-semibold uppercase tracking-wider text-primary-dark">
-              {dict.contact.instagram}
-            </p>
-            <a
-              href={site.instagramUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-3 block text-lg font-medium text-secondary hover:text-primary-dark"
-            >
-              {site.instagramHandle}
-            </a>
-          </div>
+      <div className="mt-12 grid items-start gap-8 lg:grid-cols-2 lg:gap-12">
+        <ContactChannels dict={dict} />
+        <FadeIn delay={80}>
+          <ContactForm copy={dict.contact.form} />
         </FadeIn>
       </div>
 

@@ -1,14 +1,8 @@
+import { ContactChannels } from "@/components/contact/ContactChannels";
+import { ContactForm } from "@/components/form/ContactForm";
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/ui/FadeIn";
-import {
-  InstagramIcon,
-  PhoneIcon,
-  WhatsAppIcon,
-} from "@/components/ui/icons";
-import { WhatsAppLink } from "@/components/ui/WhatsAppLink";
-import { site } from "@/data/site";
 import type { Dictionary } from "@/i18n/get-dictionary";
-import { getTelHref } from "@/lib/whatsapp";
 
 type ContactCtaProps = {
   dict: Dictionary;
@@ -27,64 +21,10 @@ export function ContactCta({ dict }: ContactCtaProps) {
           </div>
         </FadeIn>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <FadeIn delay={0}>
-            <a
-              href={getTelHref()}
-              className="flex items-start gap-4 rounded-xl border border-border bg-surface p-5 transition-colors hover:border-primary/50"
-            >
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-primary-soft text-primary-dark">
-                <PhoneIcon />
-              </span>
-              <span>
-                <span className="block text-xs font-semibold uppercase tracking-wider text-primary-dark">
-                  {dict.contact.phone}
-                </span>
-                <span className="mt-1.5 block font-display text-xl font-semibold text-secondary">
-                  {site.phoneDisplay}
-                </span>
-              </span>
-            </a>
-          </FadeIn>
-
-          <FadeIn delay={60}>
-            <WhatsAppLink
-              messages={dict.whatsappMessages}
-              className="flex items-start gap-4 rounded-xl border border-border bg-surface p-5 transition-colors hover:border-primary/50"
-            >
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#25D366]/15 text-[#1ebe57]">
-                <WhatsAppIcon />
-              </span>
-              <span>
-                <span className="block text-xs font-semibold uppercase tracking-wider text-primary-dark">
-                  {dict.contact.whatsapp}
-                </span>
-                <span className="mt-1.5 block font-display text-xl font-semibold text-secondary">
-                  {site.phoneDisplay}
-                </span>
-              </span>
-            </WhatsAppLink>
-          </FadeIn>
-
-          <FadeIn delay={120} className="sm:col-span-2 lg:col-span-1">
-            <a
-              href={site.instagramUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-start gap-4 rounded-xl border border-border bg-surface p-5 transition-colors hover:border-primary/50"
-            >
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-primary-soft text-primary-dark">
-                <InstagramIcon />
-              </span>
-              <span className="min-w-0">
-                <span className="block text-xs font-semibold uppercase tracking-wider text-primary-dark">
-                  {dict.contact.instagram}
-                </span>
-                <span className="mt-1.5 block truncate font-medium text-secondary">
-                  {site.instagramHandle}
-                </span>
-              </span>
-            </a>
+        <div className="mt-10 grid items-start gap-8 lg:grid-cols-2 lg:gap-12">
+          <ContactChannels dict={dict} />
+          <FadeIn delay={80}>
+            <ContactForm copy={dict.contact.form} />
           </FadeIn>
         </div>
       </Container>

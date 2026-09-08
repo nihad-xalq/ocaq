@@ -64,7 +64,25 @@
     "whatsapp": "Написать в WhatsApp",
     "instagram": "Instagram",
     "cta": "Отправить сообщение",
-    "map": "Адрес"
+    "map": "Адрес",
+    "form": {
+      "title": "Форма заявки",
+      "fullName": "Имя и фамилия",
+      "fullNamePlaceholder": "Ваше имя и фамилия",
+      "phone": "Телефон",
+      "phonePlaceholder": "050 358 46 99",
+      "email": "Эл. почта",
+      "emailPlaceholder": "email@example.com",
+      "message": "Сообщение",
+      "messagePlaceholder": "Напишите коротко...",
+      "optional": "необязательно",
+      "submit": "Отправить",
+      "submitting": "Отправка...",
+      "success": "Заявка принята. Мы свяжемся с вами в ближайшее время.",
+      "required": "Это поле обязательно.",
+      "invalidPhone": "Введите корректный номер телефона.",
+      "invalidEmail": "Введите корректный адрес эл. почты."
+    }
   },
   "whatsappMessages": {
     "therapies": "Хочу узнать о терапиях.",
@@ -82,7 +100,8 @@
     "backToTop": "Наверх",
     "openMenu": "Открыть меню",
     "closeMenu": "Закрыть меню",
-    "language": "Язык"
+    "language": "Язык",
+    "dismiss": "Закрыть"
   },
   "notFound": {
     "title": "Страница не найдена",
