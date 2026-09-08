@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
@@ -12,6 +13,12 @@ import {
 } from "@/i18n/config";
 import { localePath, stripLocaleFromPathname } from "@/i18n/locale-path";
 import { cn } from "@/lib/cn";
+
+const localeFlags: Record<Locale, string> = {
+  az: "/flags/az.png",
+  en: "/flags/en.png",
+  ru: "/flags/ru.png",
+};
 
 type LanguageSwitcherProps = {
   locale: Locale;
@@ -89,7 +96,7 @@ export function LanguageSwitcher({ locale, label }: LanguageSwitcherProps) {
         role="listbox"
         aria-label={label}
         className={cn(
-          "absolute right-0 top-[calc(100%+0.5rem)] z-50 min-w-[11.5rem] rounded-xl border border-border bg-surface p-1.5 shadow-[0_18px_40px_-16px_rgba(30,37,44,0.32)] transition-all duration-150 origin-top-right",
+          "absolute right-0 top-[calc(100%+0.5rem)] z-50 rounded-xl border border-border bg-surface p-1.5 shadow-[0_18px_40px_-16px_rgba(30,37,44,0.32)] transition-all duration-150 origin-top-right",
           open
             ? "pointer-events-auto translate-y-0 scale-100 opacity-100"
             : "pointer-events-none -translate-y-1 scale-95 opacity-0",
@@ -104,41 +111,26 @@ export function LanguageSwitcher({ locale, label }: LanguageSwitcherProps) {
               href={localePath(code, barePath)}
               hrefLang={code}
               role="option"
+              aria-label={localeNames[code]}
               aria-selected={active}
               onClick={() => setOpen(false)}
               className={cn(
-                "flex items-center gap-3 rounded-lg px-2.5 py-2 transition-colors",
+                "flex items-center justify-between gap-2 rounded-lg px-2.5 py-2 transition-colors",
                 active
                   ? "bg-primary-soft text-secondary"
                   : "text-muted hover:bg-primary-soft/60 hover:text-secondary",
               )}
             >
-              <span className="w-7 text-[11px] font-semibold tracking-[0.14em]">
+              <Image
+                src={localeFlags[code]}
+                alt=""
+                width={20}
+                height={20}
+                className="size-5 shrink-0 object-contain"
+              />
+              <span className="text-[13px] font-bold tracking-[0.14em]">
                 {localeLabels[code]}
               </span>
-              <span className="flex-1 text-sm font-medium">
-                {localeNames[code]}
-              </span>
-              {active ? (
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 12 12"
-                  fill="none"
-                  aria-hidden="true"
-                  className="shrink-0 text-primary-dark"
-                >
-                  <path
-                    d="M2.5 6.2L4.8 8.5L9.5 3.5"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              ) : (
-                <span className="w-3.5 shrink-0" aria-hidden="true" />
-              )}
             </Link>
           );
         })}
