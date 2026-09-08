@@ -7,13 +7,14 @@ import { useState } from "react";
 
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 import { Container } from "@/components/ui/Container";
-import { WhatsAppButton } from "@/components/ui/WhatsAppLink";
+import { PhoneIcon } from "@/components/ui/icons";
 import { site } from "@/data/site";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import type { Locale } from "@/i18n/config";
 import { isActivePath, localePath } from "@/i18n/locale-path";
 import { routes } from "@/i18n/paths";
 import { cn } from "@/lib/cn";
+import { getTelHref } from "@/lib/whatsapp";
 
 type HeaderProps = {
   locale: Locale;
@@ -77,12 +78,17 @@ export function Header({ locale, dict }: HeaderProps) {
 
         <div className="flex items-center gap-2 sm:gap-3">
           <LanguageSwitcher locale={locale} label={dict.common.language} />
-          <WhatsAppButton
-            messages={dict.whatsappMessages}
-            className="hidden sm:inline-flex"
+          <span
+            className="hidden h-5 w-px bg-border sm:block"
+            aria-hidden="true"
+          />
+          <a
+            href={getTelHref()}
+            className="hidden h-10 items-center gap-2 whitespace-nowrap text-sm font-semibold tabular-nums tracking-wide text-secondary transition-colors hover:text-primary-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:inline-flex"
           >
-            {dict.nav.whatsapp}
-          </WhatsAppButton>
+            <PhoneIcon className="shrink-0 text-primary-dark" />
+            {site.phoneDisplay}
+          </a>
           <button
             type="button"
             className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-border text-secondary lg:hidden"
@@ -147,13 +153,14 @@ export function Header({ locale, dict }: HeaderProps) {
               </Link>
             );
           })}
-          <WhatsAppButton
-            messages={dict.whatsappMessages}
-            className="mt-2"
+          <a
+            href={getTelHref()}
             onClick={() => setOpen(false)}
+            className="mt-2 inline-flex h-10 items-center justify-center gap-2 rounded-md border border-border px-3 text-sm font-semibold tabular-nums text-secondary transition-colors hover:border-primary hover:text-primary-dark"
           >
-            {dict.nav.whatsapp}
-          </WhatsAppButton>
+            <PhoneIcon className="shrink-0" />
+            {site.phoneDisplay}
+          </a>
         </Container>
       </div>
     </header>
