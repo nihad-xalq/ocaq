@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-import { defaultLocale, locales } from "@/i18n/config";
+import { defaultLocale, localeHeader, locales } from "@/i18n/config";
 
 const PUBLIC_FILE = /\.[^/]+$/;
 
@@ -29,14 +29,24 @@ export function proxy(request: NextRequest) {
 
   // Prefixed locales pass through.
   if (first && locales.includes(first as (typeof locales)[number])) {
-    return NextResponse.next();
+    return NextResponse.next({
+      request: { headers: withLocaleHeader(request, first) },
+    });
   }
 
   // Unprefixed paths rewrite internally to /az/...
   const url = request.nextUrl.clone();
   url.pathname =
     pathname === "/" ? `/${defaultLocale}` : `/${defaultLocale}${pathname}`;
-  return NextResponse.rewrite(url);
+  return NextResponse.rewrite(url, {
+    request: { headers: withLocaleHeader(request, defaultLocale) },
+  });
+}
+
+function withLocaleHeader(request: NextRequest, locale: string) {
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set(localeHeader, locale);
+  return requestHeaders;
 }
 
 export const config = {

@@ -4,6 +4,8 @@ export type Locale = (typeof locales)[number];
 
 export const defaultLocale: Locale = "az";
 
+export const localeHeader = "x-locale";
+
 export const localeLabels: Record<Locale, string> = {
   az: "AZ",
   en: "EN",

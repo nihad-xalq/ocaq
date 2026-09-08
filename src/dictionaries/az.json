@@ -84,6 +84,11 @@
     "closeMenu": "Menyunu bağla",
     "language": "Dil"
   },
+  "notFound": {
+    "title": "Səhifə tapılmadı",
+    "description": "Axtardığınız səhifə mövcud deyil və ya ünvan dəyişib.",
+    "backHome": "Ana səhifəyə qayıt"
+  },
   "servicesItems": {
     "individualGroup": {
       "title": "Fərdi & Qrup terapiyası",
