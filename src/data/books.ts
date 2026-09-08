@@ -5,9 +5,18 @@ import type { Book } from "@/types/content";
  * Leave pdfPath empty to show "Coming soon".
  */
 export const books: Book[] = [
-  { id: "book-1", dictionaryKey: "placeholder1" },
-  { id: "book-2", dictionaryKey: "placeholder2" },
-  { id: "book-3", dictionaryKey: "placeholder3" },
+  {
+    id: "nossrat-pezeshkian",
+    dictionaryKey: "nossratPezeshkian",
+    pdfPath: "/library/nossrat-pezeshkian.pdf",
+    coverTone: "slate",
+  },
+  {
+    id: "antoni-kempinski",
+    dictionaryKey: "antoniKempinski",
+    pdfPath: "/library/antoni-kempinski.pdf",
+    coverTone: "teal",
+  },
 ];
 
-export const booksPreviewCount = 3;
+export const booksPreviewCount = 2;

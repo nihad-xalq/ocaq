@@ -44,10 +44,11 @@ export function Header({ locale, dict }: HeaderProps) {
           <Image
             src={site.logo}
             alt={site.name}
-            fill
             priority
-            className="object-contain object-left"
+            loading="eager"
+            fill
             sizes="144px"
+            className="object-contain object-left"
           />
         </Link>
 
@@ -84,7 +85,13 @@ export function Header({ locale, dict }: HeaderProps) {
             <span className="sr-only">
               {open ? dict.common.closeMenu : dict.common.openMenu}
             </span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
               {open ? (
                 <path
                   d="M6 6l12 12M18 6L6 18"

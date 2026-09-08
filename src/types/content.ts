@@ -26,6 +26,7 @@ export type Book = {
   /** Path under /public, e.g. /library/example.pdf — empty means coming soon */
   pdfPath?: string;
   cover?: string;
+  coverTone?: "slate" | "teal";
   dictionaryKey: string;
 };
 

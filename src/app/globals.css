@@ -1,18 +1,22 @@
 @import "tailwindcss";
 
 :root {
-  /* Flame orange from logo */
-  --color-primary: #f69523;
-  --color-primary-dark: #e07e12;
-  --color-primary-soft: #fff1de;
-  /* Script / figure purple from logo */
-  --color-secondary: #4b367c;
-  --color-secondary-soft: #5f4a96;
-  --color-background: #faf8f6;
+  /* Dusty teal — sea mist palette */
+  --color-primary: #5e8b8a;
+  --color-primary-dark: #4a7372;
+  --color-primary-soft: #eaf2f1;
+  /* Mid teal for the hero CTA — between dusty primary and the brighter accent */
+  --color-accent: #3fa6a3;
+  --color-accent-dark: #348f8c;
+  /* Slate for headings */
+  --color-secondary: #3a4550;
+  --color-secondary-soft: #4e5b68;
+  --color-footer: #1e252c;
+  --color-background: #f5f6f4;
   --color-surface: #ffffff;
-  --color-muted: #6b6578;
-  --color-border: #e8e2f0;
-  --color-foreground: #2a2440;
+  --color-muted: #667078;
+  --color-border: #dfe5e3;
+  --color-foreground: #243038;
   --background: var(--color-background);
   --foreground: var(--color-foreground);
 }
@@ -23,8 +27,11 @@
   --color-primary: var(--color-primary);
   --color-primary-dark: var(--color-primary-dark);
   --color-primary-soft: var(--color-primary-soft);
+  --color-accent: var(--color-accent);
+  --color-accent-dark: var(--color-accent-dark);
   --color-secondary: var(--color-secondary);
   --color-secondary-soft: var(--color-secondary-soft);
+  --color-footer: var(--color-footer);
   --color-surface: var(--color-surface);
   --color-muted: var(--color-muted);
   --color-border: var(--color-border);

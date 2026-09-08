@@ -14,9 +14,15 @@
   "hero": {
     "brand": "Ocaq",
     "tagline": "Public Association of Psychotherapists",
-    "description": "Warmth shared, healing shared. Rediscover inner strength through individual and group therapy.",
+    "headline": "Warmth shared, healing shared.",
+    "description": "Rediscover inner strength through individual and group therapy.",
     "ctaPrimary": "Get in touch",
-    "ctaSecondary": "Our services"
+    "ctaSecondary": "Our services",
+    "points": [
+      "Individual and group therapy",
+      "Professional specialists",
+      "Ocaq translation library"
+    ]
   },
   "services": {
     "title": "Our services",
@@ -34,7 +40,8 @@
     "subtitle": "Books we translated and prepared from Russian into Azerbaijani.",
     "seeAll": "See all",
     "pageTitle": "Library",
-    "pageSubtitle": "Materials that previously had no Azerbaijani version — read and download.",
+    "pageSubtitle": "Books translated and published by Ocaq.",
+    "pageIntro": "Every book in this library was translated from Russian into Azerbaijani and published by the Ocaq Public Association of Psychotherapists. We do this so professional literature is available in Azerbaijani — you can read the books here and download them as PDFs.",
     "download": "Download PDF",
     "comingSoon": "Coming soon"
   },
@@ -112,37 +119,32 @@
     }
   },
   "specialistsItems": {
-    "placeholder1": {
-      "name": "Specialist Name",
+    "cavidQafarli": {
+      "name": "Cavid Qafarlı",
       "role": "Psychotherapist",
       "bio": "Biography and specialization will be added soon."
     },
-    "placeholder2": {
-      "name": "Specialist Name",
-      "role": "Group therapist",
+    "sevincAbbasova": {
+      "name": "Sevinc Abbasova",
+      "role": "Psychotherapist",
       "bio": "Biography and specialization will be added soon."
     },
-    "placeholder3": {
-      "name": "Specialist Name",
-      "role": "Hypnotherapist",
+    "sehaneRahimova": {
+      "name": "Şəhanə Rəhimova",
+      "role": "Psychotherapist",
       "bio": "Biography and specialization will be added soon."
     }
   },
   "booksItems": {
-    "placeholder1": {
-      "title": "Book title (sample)",
-      "description": "Material translated from Russian into Azerbaijani. PDF will be added soon.",
-      "authors": "Ocaq translation group"
+    "nossratPezeshkian": {
+      "title": "If you want to have something you have never had, then do something you have never done.",
+      "description": "Translated from Russian into Azerbaijani and published by Ocaq.",
+      "authors": "Nossrat Peseschkian"
     },
-    "placeholder2": {
-      "title": "Book title (sample)",
-      "description": "Professional literature that previously had no Azerbaijani version.",
-      "authors": "Ocaq translation group"
-    },
-    "placeholder3": {
-      "title": "Book title (sample)",
-      "description": "Reading material that supports training and therapy processes.",
-      "authors": "Ocaq translation group"
+    "antoniKempinski": {
+      "title": "Psychopathology of Neuroses",
+      "description": "Translated from Russian into Azerbaijani and published by Ocaq.",
+      "authors": "Antoni Kępiński"
     }
   },
   "worksItems": {

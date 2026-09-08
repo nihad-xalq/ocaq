@@ -1,3 +1,4 @@
+import { BookCover } from "@/components/library/BookCover";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import type { Book } from "@/types/content";
 import { cn } from "@/lib/cn";
@@ -5,7 +6,7 @@ import { cn } from "@/lib/cn";
 type BookCardProps = {
   book: Book;
   dict: Dictionary;
-  /** When true, show PDF download control. Homepage preview keeps this false. */
+  /** When true, show PDF download or coming-soon. */
   showDownload?: boolean;
   className?: string;
 };
@@ -27,9 +28,15 @@ export function BookCard({
         className,
       )}
     >
-      <div className="mb-4 aspect-[3/4] w-28 shrink-0 rounded-md bg-gradient-to-b from-primary/30 to-secondary/20 sm:mb-0" />
+      <BookCover
+        title={item.title}
+        authors={item.authors}
+        brand={dict.hero.brand}
+        cover={book.cover}
+        tone={book.coverTone}
+      />
       <div className="flex flex-1 flex-col">
-        <h3 className="font-display text-xl font-semibold text-secondary">
+        <h3 className="font-display text-xl font-semibold leading-snug text-secondary">
           {item.title}
         </h3>
         <p className="mt-1 text-sm text-primary-dark">{item.authors}</p>

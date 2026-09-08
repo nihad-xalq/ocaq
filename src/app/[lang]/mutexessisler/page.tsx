@@ -1,11 +1,10 @@
-import type { Metadata } from "next";
-import { notFound } from "next/navigation";
-
 import { SpecialistCard } from "@/components/specialists/SpecialistCard";
 import { Container } from "@/components/ui/Container";
-import { specialists } from "@/data/specialists";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { isLocale, type Locale } from "@/i18n/config";
+import { specialists } from "@/data/specialists";
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 
 export async function generateMetadata({
   params,

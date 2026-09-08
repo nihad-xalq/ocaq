@@ -2,11 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Container } from "@/components/ui/Container";
+import { InstagramIcon, PhoneIcon, WhatsAppIcon } from "@/components/ui/icons";
 import { site } from "@/data/site";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import type { Locale } from "@/i18n/config";
 import { localePath } from "@/i18n/locale-path";
 import { routes } from "@/i18n/paths";
+import { getTelHref, getWhatsAppUrl } from "@/lib/whatsapp";
 import { formatYear } from "@/utils/format";
 
 type FooterProps = {
@@ -18,7 +20,7 @@ export function Footer({ locale, dict }: FooterProps) {
   const year = formatYear();
 
   return (
-    <footer className="mt-auto border-t border-border bg-secondary text-white">
+    <footer className="mt-auto border-t border-border bg-footer text-white">
       <Container className="grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-3">
         <div>
           <div className="relative h-16 w-40 overflow-hidden rounded-md bg-white/95 p-1.5">
@@ -26,9 +28,10 @@ export function Footer({ locale, dict }: FooterProps) {
               <Image
                 src={site.logo}
                 alt={site.name}
+                loading="lazy"
                 fill
-                className="object-contain object-left"
                 sizes="160px"
+                className="object-contain object-left"
               />
             </div>
           </div>
@@ -41,13 +44,25 @@ export function Footer({ locale, dict }: FooterProps) {
           <p className="text-sm font-semibold uppercase tracking-wider text-primary">
             {dict.nav.contact}
           </p>
-          <ul className="mt-4 space-y-2 text-sm text-white/80">
+          <ul className="mt-4 space-y-3 text-sm text-white/80">
             <li>
               <a
-                href={`tel:${site.phoneTel}`}
-                className="hover:text-primary transition-colors"
+                href={getTelHref()}
+                className="inline-flex items-center gap-2.5 hover:text-primary transition-colors"
               >
+                <PhoneIcon className="shrink-0 text-primary" />
                 {site.phoneDisplay}
+              </a>
+            </li>
+            <li>
+              <a
+                href={getWhatsAppUrl()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2.5 hover:text-primary transition-colors"
+              >
+                <WhatsAppIcon className="shrink-0 text-primary" />
+                WhatsApp
               </a>
             </li>
             <li>
@@ -55,8 +70,9 @@ export function Footer({ locale, dict }: FooterProps) {
                 href={site.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-primary transition-colors"
+                className="inline-flex items-center gap-2.5 hover:text-primary transition-colors"
               >
+                <InstagramIcon className="shrink-0 text-primary" />
                 {site.instagramHandle}
               </a>
             </li>

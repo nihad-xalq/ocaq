@@ -14,9 +14,15 @@
   "hero": {
     "brand": "Ocaq",
     "tagline": "Psixoterapevtlərin İctimai Birliyi",
-    "description": "Birlikdə isinmək, birlikdə sağalmaq. Fərdi və qrup terapiyası ilə daxili gücü yenidən tapın.",
+    "headline": "Birlikdə isinmək, birlikdə sağalmaq.",
+    "description": "Fərdi və qrup terapiyası ilə daxili gücü yenidən tapın.",
     "ctaPrimary": "Əlaqə saxla",
-    "ctaSecondary": "Xidmətlərimiz"
+    "ctaSecondary": "Xidmətlərimiz",
+    "points": [
+      "Fərdi və qrup terapiyası",
+      "Peşəkar mütəxəssislər",
+      "Ocaq tərcümə kitabxanası"
+    ]
   },
   "services": {
     "title": "Xidmətlərimiz",
@@ -34,7 +40,8 @@
     "subtitle": "Rus dilindən Azərbaycan dilinə tərcümə etdiyimiz və hazırladığımız kitablar.",
     "seeAll": "Hamısına bax",
     "pageTitle": "Kitabxana",
-    "pageSubtitle": "Azərbaycan dilində əvvəl mövcud olmayan materiallar — oxuyun və yükləyin.",
+    "pageSubtitle": "Ocağın tərcümə edib nəşr etdiyi kitablar.",
+    "pageIntro": "Bu kitabxanadakı bütün materiallar Ocaq Psixoterapevtlərin İctimai Birliyi tərəfindən rus dilindən Azərbaycan dilinə tərcümə edilmiş və nəşr olunmuşdur. Məqsədimiz peşəkar ədəbiyyatı Azərbaycan dilində əlçatan etməkdir — kitablardan oxuya və PDF şəklində yükləyə bilərsiniz.",
     "download": "PDF yüklə",
     "comingSoon": "Tezliklə"
   },
@@ -112,37 +119,32 @@
     }
   },
   "specialistsItems": {
-    "placeholder1": {
-      "name": "Mütəxəssis Adı",
-      "role": "Psixoterapevt",
+    "cavidQafarli": {
+      "name": "Cavid Qafarlı",
+      "role": "Psixiatr psixoterapevt",
       "bio": "Tərcümeyi-hal və ixtisas sahəsi tezliklə əlavə olunacaq."
     },
-    "placeholder2": {
-      "name": "Mütəxəssis Adı",
-      "role": "Qrup terapevti",
+    "sevincAbbasova": {
+      "name": "Sevinc Abbasova",
+      "role": "Psixiatr psixoterapevt",
       "bio": "Tərcümeyi-hal və ixtisas sahəsi tezliklə əlavə olunacaq."
     },
-    "placeholder3": {
-      "name": "Mütəxəssis Adı",
-      "role": "Hipnoterapevt",
+    "sehaneRahimova": {
+      "name": "Şəhanə Rəhimova",
+      "role": "Psixiatr psixoterapevt",
       "bio": "Tərcümeyi-hal və ixtisas sahəsi tezliklə əlavə olunacaq."
     }
   },
   "booksItems": {
-    "placeholder1": {
-      "title": "Kitab adı (nümunə)",
-      "description": "Rus dilindən Azərbaycan dilinə tərcümə edilmiş material. PDF tezliklə əlavə olunacaq.",
-      "authors": "Ocaq tərcümə qrupu"
+    "nossratPezeshkian": {
+      "title": "Əgər sən heç vaxt sahib olmadığın bir şeyə sahib olmaq istəyirsənsə, onda heç vaxt etmədiyin bir şey et.",
+      "description": "Ocaq tərəfindən rus dilindən Azərbaycan dilinə tərcümə edilmiş və nəşr olunmuşdur.",
+      "authors": "Nossrat Pezeşkian"
     },
-    "placeholder2": {
-      "title": "Kitab adı (nümunə)",
-      "description": "Azərbaycan dilində əvvəl mövcud olmayan peşəkar ədəbiyyat.",
-      "authors": "Ocaq tərcümə qrupu"
-    },
-    "placeholder3": {
-      "title": "Kitab adı (nümunə)",
-      "description": "Təlim və terapiya prosesini dəstəkləyən oxu materialı.",
-      "authors": "Ocaq tərcümə qrupu"
+    "antoniKempinski": {
+      "title": "Nevrozların Psixopatologiyası",
+      "description": "Ocaq tərəfindən rus dilindən Azərbaycan dilinə tərcümə edilmiş və nəşr olunmuşdur.",
+      "authors": "Antoni Kempinski"
     }
   },
   "worksItems": {

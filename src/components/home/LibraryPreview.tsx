@@ -32,7 +32,7 @@ export function LibraryPreview({ locale, dict }: LibraryPreviewProps) {
       />
       <div className="space-y-8">
         {items.map((book) => (
-          <BookCard key={book.id} book={book} dict={dict} showDownload={false} />
+          <BookCard key={book.id} book={book} dict={dict} showDownload />
         ))}
       </div>
     </Container>

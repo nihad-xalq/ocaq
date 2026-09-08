@@ -1,0 +1,12 @@
+---
+description: Do not open localhost in the Cursor IDE browser unless the user asks
+alwaysApply: true
+---
+
+# Browser
+
+Do not open, navigate, lock, or screenshot localhost (or any app URL) in the Cursor IDE browser.
+
+Only use the IDE browser when the user explicitly says to open it (for example: "open", "open in browser", "check in the browser").
+
+Verify UI another way until then: code review, lints, tests, or curl against the running server.

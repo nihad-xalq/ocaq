@@ -4,7 +4,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
 
-import { localeLabels, locales, type Locale } from "@/i18n/config";
+import {
+  localeLabels,
+  localeNames,
+  locales,
+  type Locale,
+} from "@/i18n/config";
 import { localePath, stripLocaleFromPathname } from "@/i18n/locale-path";
 import { cn } from "@/lib/cn";
 
@@ -51,9 +56,10 @@ export function LanguageSwitcher({ locale, label }: LanguageSwitcherProps) {
         aria-controls={menuId}
         onClick={() => setOpen((value) => !value)}
         className={cn(
-          "inline-flex h-8 items-center gap-1.5 rounded-md border border-border bg-surface px-2.5 text-xs font-semibold tracking-wide text-secondary transition-colors",
-          "hover:border-primary/50 hover:bg-primary-soft/40",
-          open && "border-primary/50 bg-primary-soft/40",
+          "inline-flex h-9 items-center gap-1.5 rounded-lg border border-border bg-surface px-3 text-xs font-semibold tracking-[0.14em] text-secondary transition-colors cursor-pointer",
+          "hover:border-primary/45 hover:bg-primary-soft/70",
+          "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
+          open && "border-primary/50 bg-primary-soft",
         )}
       >
         <span>{localeLabels[locale]}</span>
@@ -83,7 +89,7 @@ export function LanguageSwitcher({ locale, label }: LanguageSwitcherProps) {
         role="listbox"
         aria-label={label}
         className={cn(
-          "absolute right-0 top-[calc(100%+0.4rem)] z-50 min-w-[7.5rem] overflow-hidden rounded-md border border-border bg-surface py-1 shadow-[0_12px_30px_-18px_rgba(43,33,24,0.45)] transition-all duration-150 origin-top-right",
+          "absolute right-0 top-[calc(100%+0.5rem)] z-50 min-w-[11.5rem] rounded-xl border border-border bg-surface p-1.5 shadow-[0_18px_40px_-16px_rgba(30,37,44,0.32)] transition-all duration-150 origin-top-right",
           open
             ? "pointer-events-auto translate-y-0 scale-100 opacity-100"
             : "pointer-events-none -translate-y-1 scale-95 opacity-0",
@@ -101,21 +107,26 @@ export function LanguageSwitcher({ locale, label }: LanguageSwitcherProps) {
               aria-selected={active}
               onClick={() => setOpen(false)}
               className={cn(
-                "flex items-center justify-between gap-3 px-3 py-2 text-xs font-semibold tracking-wide transition-colors",
+                "flex items-center gap-3 rounded-lg px-2.5 py-2 transition-colors",
                 active
                   ? "bg-primary-soft text-secondary"
-                  : "text-muted hover:bg-primary-soft/50 hover:text-secondary",
+                  : "text-muted hover:bg-primary-soft/60 hover:text-secondary",
               )}
             >
-              <span>{localeLabels[code]}</span>
+              <span className="w-7 text-[11px] font-semibold tracking-[0.14em]">
+                {localeLabels[code]}
+              </span>
+              <span className="flex-1 text-sm font-medium">
+                {localeNames[code]}
+              </span>
               {active ? (
                 <svg
-                  width="12"
-                  height="12"
+                  width="14"
+                  height="14"
                   viewBox="0 0 12 12"
                   fill="none"
                   aria-hidden="true"
-                  className="text-primary-dark"
+                  className="shrink-0 text-primary-dark"
                 >
                   <path
                     d="M2.5 6.2L4.8 8.5L9.5 3.5"
@@ -125,7 +136,9 @@ export function LanguageSwitcher({ locale, label }: LanguageSwitcherProps) {
                     strokeLinejoin="round"
                   />
                 </svg>
-              ) : null}
+              ) : (
+                <span className="w-3.5 shrink-0" aria-hidden="true" />
+              )}
             </Link>
           );
         })}

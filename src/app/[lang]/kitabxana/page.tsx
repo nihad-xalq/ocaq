@@ -30,11 +30,14 @@ export default async function LibraryPage({
 
   return (
     <Container className="py-16 sm:py-24">
-      <div className="max-w-2xl">
+      <div className="max-w-3xl">
         <h1 className="font-display text-4xl font-semibold tracking-tight text-secondary sm:text-5xl">
           {dict.library.pageTitle}
         </h1>
         <p className="mt-4 text-lg text-muted">{dict.library.pageSubtitle}</p>
+        <p className="mt-6 max-w-2xl text-base leading-relaxed text-secondary">
+          {dict.library.pageIntro}
+        </p>
       </div>
       <div className="mt-12 space-y-10">
         {books.map((book) => (

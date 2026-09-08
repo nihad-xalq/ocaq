@@ -3,11 +3,13 @@ import type { ComponentProps, ReactNode } from "react";
 
 import { cn } from "@/lib/cn";
 
-type Variant = "primary" | "secondary" | "ghost" | "whatsapp";
+type Variant = "primary" | "accent" | "secondary" | "ghost" | "whatsapp";
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-primary text-white hover:bg-primary-dark shadow-[0_8px_24px_-12px_rgba(246,149,35,0.7)]",
+    "bg-primary text-white hover:bg-primary-dark shadow-[0_8px_24px_-12px_rgba(94,139,138,0.55)]",
+  accent:
+    "bg-accent text-white hover:bg-accent-dark shadow-[0_8px_24px_-12px_rgba(63,166,163,0.6)]",
   secondary: "bg-secondary text-white hover:bg-secondary-soft",
   ghost:
     "bg-transparent text-secondary border border-border hover:border-primary hover:text-primary-dark",

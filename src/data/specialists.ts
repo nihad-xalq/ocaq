@@ -1,10 +1,22 @@
 import type { Specialist } from "@/types/content";
 
-/** Replace placeholder entries with real specialists when ready. */
 export const specialists: Specialist[] = [
-  { id: "specialist-1", dictionaryKey: "placeholder1" },
-  { id: "specialist-2", dictionaryKey: "placeholder2" },
-  { id: "specialist-3", dictionaryKey: "placeholder3" },
+  {
+    id: "sevinc-abbasova",
+    dictionaryKey: "sevincAbbasova",
+    image: "/specialists/sevinc-abbasova.png",
+  },
+  {
+    id: "cavid-qafarli",
+    dictionaryKey: "cavidQafarli",
+    image: "/specialists/cavid-qafarli.png",
+  },
+
+  {
+    id: "sehane-rahimova",
+    dictionaryKey: "sehaneRahimova",
+    image: "/specialists/sehane-rahimova.png",
+  },
 ];
 
 export const specialistsPreviewCount = 3;
