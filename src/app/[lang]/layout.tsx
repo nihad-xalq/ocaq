@@ -1,20 +1,19 @@
-import type { Metadata } from "next";
-import { notFound } from "next/navigation";
-
-import { DocumentLang } from "@/components/layout/DocumentLang";
-import { Footer } from "@/components/layout/Footer";
-import { Header } from "@/components/layout/Header";
-import { BackToTop } from "@/components/ui/BackToTop";
-import { ToastProvider } from "@/components/ui/Toast";
-import { WhatsAppWidget } from "@/components/ui/WhatsAppWidget";
-import { ogImageSize, site } from "@/data/site";
-import { getDictionary } from "@/i18n/get-dictionary";
 import {
   isLocale,
   locales,
   openGraphLocales,
   type Locale,
 } from "@/i18n/config";
+import { DocumentLang } from "@/components/layout/DocumentLang";
+import { WhatsAppWidget } from "@/components/ui/WhatsAppWidget";
+import { BackToTop } from "@/components/ui/BackToTop";
+import { ToastProvider } from "@/components/ui/Toast";
+import { getDictionary } from "@/i18n/get-dictionary";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+import { ogImageSize, site } from "@/data/site";
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 
 export async function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
