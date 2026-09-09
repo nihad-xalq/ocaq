@@ -77,6 +77,7 @@ export function Hero({ locale, dict }: HeroProps) {
               src={site.heroImage}
               alt={dict.hero.imageAlt}
               priority
+              fetchPriority="high"
               fill
               sizes="(max-width: 1024px) 90vw, 520px"
               className="object-cover object-[center_30%]"
