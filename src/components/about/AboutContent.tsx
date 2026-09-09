@@ -1,4 +1,4 @@
-import { formatIds, founderImage, teamPhotos } from "@/data/about";
+import { brochurePdf, formatIds, founderImage, teamPhotos } from "@/data/about";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { getMailtoHref, getMapsHref, site } from "@/data/site";
 import { MailIcon, MapPinIcon } from "@/components/ui/icons";
@@ -186,6 +186,18 @@ export function AboutContent({ locale, dict }: AboutContentProps) {
             </FadeIn>
           ))}
         </div>
+
+        <FadeIn>
+          <p className="mt-16 border-t border-border pt-8">
+            <a
+              href={brochurePdf}
+              download
+              className="text-sm text-muted underline-offset-4 transition-colors hover:text-secondary underline"
+            >
+              {dict.about.brochureDownload}
+            </a>
+          </p>
+        </FadeIn>
       </Container>
     </>
   );

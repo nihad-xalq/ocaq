@@ -18,3 +18,5 @@ export type DutyId = (typeof dutyIds)[number];
 export const formatIds = ["individual", "family", "group"] as const;
 
 export type FormatId = (typeof formatIds)[number];
+
+export const brochurePdf = "/ocaq-psixoterapiya-merkezi.pdf";
