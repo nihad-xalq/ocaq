@@ -23,9 +23,9 @@ export function ContactCta({ locale, dict }: ContactCtaProps) {
           </div>
         </FadeIn>
 
-        <div className="mt-10 grid items-start gap-8 lg:grid-cols-2 lg:gap-12">
+        <div className="mt-10 grid min-w-0 items-start gap-8 lg:grid-cols-2 lg:gap-12">
           <ContactChannels dict={dict} />
-          <FadeIn delay={80}>
+          <FadeIn delay={80} className="min-w-0">
             <ContactForm copy={dict.contact.form} locale={locale} />
           </FadeIn>
         </div>

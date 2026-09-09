@@ -69,10 +69,10 @@ export function Footer({ locale, dict }: FooterProps) {
                 href={site.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2.5 hover:text-primary transition-colors"
+                className="inline-flex max-w-full min-w-0 items-center gap-2.5 hover:text-primary transition-colors"
               >
                 <InstagramIcon className="shrink-0 text-primary" />
-                {site.instagramHandle}
+                <span className="break-all">{site.instagramHandle}</span>
               </a>
             </li>
           </ul>

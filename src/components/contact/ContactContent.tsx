@@ -23,11 +23,11 @@ export function ContactContent({ locale, dict }: ContactContentProps) {
         </div>
       </FadeIn>
 
-      <div className="mt-12 grid items-start gap-8 lg:grid-cols-2 lg:gap-12">
+      <div className="mt-12 grid min-w-0 items-start gap-8 lg:grid-cols-2 lg:gap-12">
         <ContactChannels dict={dict} />
-          <FadeIn delay={80}>
-            <ContactForm copy={dict.contact.form} locale={locale} />
-          </FadeIn>
+        <FadeIn delay={80} className="min-w-0">
+          <ContactForm copy={dict.contact.form} locale={locale} />
+        </FadeIn>
       </div>
 
       <FadeIn delay={180}>

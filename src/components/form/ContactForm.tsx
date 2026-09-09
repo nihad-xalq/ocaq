@@ -39,7 +39,7 @@ export function ContactForm({ copy, locale }: ContactFormProps) {
     <form
       noValidate
       onSubmit={handleSubmit}
-      className="rounded-xl border border-border bg-surface p-5 sm:p-6"
+      className="w-full min-w-0 rounded-xl border border-border bg-surface p-5 sm:p-6"
     >
       <h3 className="font-display text-xl font-semibold text-secondary">
         {copy.title}
