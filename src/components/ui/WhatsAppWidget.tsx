@@ -17,7 +17,7 @@ export function WhatsAppWidget({ label, messages }: WhatsAppWidgetProps) {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={label}
-      className="fixed right-5 bottom-5 z-40 flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-105 hover:bg-[#1ebe57]"
+      className="fixed right-5 bottom-5 z-40 flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_0_5px_5px_rgba(0,0,0,0.1)] transition-transform hover:scale-105 hover:bg-[#1ebe57]"
     >
       <svg
         width="24"
