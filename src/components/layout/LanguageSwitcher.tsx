@@ -5,12 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
 
-import {
-  localeLabels,
-  localeNames,
-  locales,
-  type Locale,
-} from "@/i18n/config";
+import { localeLabels, localeNames, locales, type Locale } from "@/i18n/config";
 import { localePath, stripLocaleFromPathname } from "@/i18n/locale-path";
 import { cn } from "@/lib/cn";
 
@@ -96,7 +91,7 @@ export function LanguageSwitcher({ locale, label }: LanguageSwitcherProps) {
         role="listbox"
         aria-label={label}
         className={cn(
-          "absolute right-0 top-[calc(100%+0.5rem)] z-50 rounded-xl border border-border bg-surface p-1.5 shadow-[0_18px_40px_-16px_rgba(30,37,44,0.32)] transition-all duration-150 origin-top-right",
+          "absolute right-0 top-[calc(100%+0.5rem)] z-50 min-w-max rounded-xl border border-border bg-surface p-1.5 shadow-[0_18px_40px_-16px_rgba(30,37,44,0.32)] transition-all duration-150 origin-top-right",
           open
             ? "pointer-events-auto translate-y-0 scale-100 opacity-100"
             : "pointer-events-none -translate-y-1 scale-95 opacity-0",
@@ -115,7 +110,7 @@ export function LanguageSwitcher({ locale, label }: LanguageSwitcherProps) {
               aria-selected={active}
               onClick={() => setOpen(false)}
               className={cn(
-                "flex items-center justify-between gap-2 rounded-lg px-2.5 py-2 transition-colors",
+                "flex items-center justify-between gap-2 rounded-lg px-2.5 py-2 transition-colors min-w-max",
                 active
                   ? "bg-primary-soft text-secondary"
                   : "text-muted hover:bg-primary-soft/60 hover:text-secondary",
