@@ -1,22 +1,22 @@
 import { SpecialistCard } from "@/components/specialists/SpecialistCard";
+import { localePageMetadata } from "@/lib/metadata";
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { isLocale, type Locale } from "@/i18n/config";
 import { specialists } from "@/data/specialists";
 import { notFound } from "next/navigation";
+import { routes } from "@/i18n/paths";
 import type { Metadata } from "next";
 
 export async function generateMetadata({
   params,
 }: PageProps<"/[lang]/mutexessisler">): Promise<Metadata> {
   const { lang } = await params;
-  if (!isLocale(lang)) return {};
-  const dict = await getDictionary(lang);
-  return {
+  return localePageMetadata(lang, routes.specialists, (dict) => ({
     title: dict.specialists.pageTitle,
     description: dict.specialists.pageSubtitle,
-  };
+  }));
 }
 
 export default async function SpecialistsPage({

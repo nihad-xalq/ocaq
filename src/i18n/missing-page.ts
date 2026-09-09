@@ -12,5 +12,9 @@ export async function loadMissingPage(lang?: string) {
 
 export async function missingPageMetadata(lang?: string): Promise<Metadata> {
   const { dict } = await loadMissingPage(lang);
-  return { title: dict.notFound.title };
+  return {
+    title: dict.notFound.title,
+    description: dict.notFound.description,
+    robots: { index: false, follow: true },
+  };
 }

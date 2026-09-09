@@ -1,6 +1,6 @@
-import { defaultLocale, locales, type Locale } from "@/i18n/config";
-import { localePath } from "@/i18n/locale-path";
+import { languageAlternateUrls, pageUrl } from "@/lib/site-urls";
 import { getSiteUrl, site } from "@/data/site";
+import { locales } from "@/i18n/config";
 import { routes } from "@/i18n/paths";
 
 const pages = Object.values(routes);
@@ -14,9 +14,9 @@ type SitemapEntry = {
 export function getSitemapEntries(origin = getSiteUrl()): SitemapEntry[] {
   return locales.flatMap((locale) =>
     pages.map((segment) => ({
-      url: pageUrl(origin, locale, segment),
+      url: pageUrl(locale, segment, origin),
       priority: pagePriority(segment),
-      languages: languageAlternates(origin, segment),
+      languages: languageAlternateUrls(segment, origin),
     })),
   );
 }
@@ -148,23 +148,6 @@ export function sitemapStylesheet(): string {
   </xsl:template>
 </xsl:stylesheet>
 `;
-}
-
-function pageUrl(origin: URL, locale: Locale, segment: string): string {
-  return new URL(localePath(locale, segment ? `/${segment}` : "/"), origin)
-    .href;
-}
-
-function languageAlternates(origin: URL, segment: string) {
-  const languages: Record<string, string> = {
-    "x-default": pageUrl(origin, defaultLocale, segment),
-  };
-
-  for (const locale of locales) {
-    languages[locale] = pageUrl(origin, locale, segment);
-  }
-
-  return languages;
 }
 
 function pagePriority(segment: string): number {

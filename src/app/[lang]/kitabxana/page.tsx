@@ -2,22 +2,22 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { BookCard } from "@/components/library/BookCard";
+import { localePageMetadata } from "@/lib/metadata";
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { books } from "@/data/books";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { isLocale, type Locale } from "@/i18n/config";
+import { routes } from "@/i18n/paths";
 
 export async function generateMetadata({
   params,
 }: PageProps<"/[lang]/kitabxana">): Promise<Metadata> {
   const { lang } = await params;
-  if (!isLocale(lang)) return {};
-  const dict = await getDictionary(lang);
-  return {
+  return localePageMetadata(lang, routes.library, (dict) => ({
     title: dict.library.pageTitle,
     description: dict.library.pageSubtitle,
-  };
+  }));
 }
 
 export default async function LibraryPage({

@@ -12,7 +12,9 @@ import { ToastProvider } from "@/components/ui/Toast";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { ogImageSize, site } from "@/data/site";
+import { siteJsonLd } from "@/lib/json-ld";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
@@ -39,9 +41,12 @@ export async function generateMetadata({
       template: `%s · Ocaq`,
     },
     description: dict.meta.description,
+    keywords: dict.meta.keywords,
     openGraph: {
       type: "website",
       siteName: site.name,
+      title: dict.meta.title,
+      description: dict.meta.description,
       locale: openGraphLocales[lang],
       alternateLocale: locales
         .filter((code) => code !== lang)
@@ -50,6 +55,8 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
+      title: dict.meta.title,
+      description: dict.meta.description,
       images: [ogImage],
     },
   };
@@ -71,6 +78,7 @@ export default async function LangLayout({
   return (
     <>
       <DocumentLang lang={locale} />
+      <JsonLd data={siteJsonLd(locale, dict.meta.description)} />
       <ToastProvider dismissLabel={dict.common.dismiss}>
         <Header locale={locale} dict={dict} />
         <main className="flex-1">{children}</main>

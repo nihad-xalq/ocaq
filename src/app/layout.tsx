@@ -1,13 +1,32 @@
 import { Fraunces, Source_Sans_3 } from "next/font/google";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 
-import { getSiteUrl } from "@/data/site";
+import { getSiteUrl, site } from "@/data/site";
 
 import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: getSiteUrl(),
+  applicationName: site.name,
+  authors: [{ name: site.fullName }],
+  creator: site.fullName,
+  publisher: site.fullName,
+  category: "health",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#5e8b8a",
 };
 
 const fraunces = Fraunces({
