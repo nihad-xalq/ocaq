@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Ocaq — Public Association of Psychotherapists",
-    "description": "Individual and group therapy, hypnotherapy, psychodrama, and development programs.",
+    "description": "Ocaq is a public association of psychotherapists in Baku offering individual and group therapy, hypnotherapy, psychodrama, and development programs to help you rediscover inner strength.",
     "keywords": [
       "psychotherapy",
       "psychologist Baku",
@@ -44,7 +44,8 @@
     "subtitle": "Meet the team.",
     "seeAll": "See all",
     "pageTitle": "Our specialists",
-    "pageSubtitle": "Our specialists — psychotherapists of the Ocaq association."
+    "pageSubtitle": "Our specialists — psychotherapists of the Ocaq association.",
+    "pageDescription": "Meet the Ocaq specialists in Baku: psychiatrists and psychotherapists offering individual, group, and family therapy. Get to know the team behind our professional support."
   },
   "library": {
     "title": "Library",
@@ -52,6 +53,7 @@
     "seeAll": "See all",
     "pageTitle": "Library",
     "pageSubtitle": "Library — books translated and published by Ocaq.",
+    "pageDescription": "The Ocaq library collects professional psychotherapy books we translated from Russian into Azerbaijani. Read them here and download the PDFs free of charge.",
     "pageIntro": "Every book in this library was translated from Russian into Azerbaijani and published by the Ocaq Public Association of Psychotherapists. We do this so professional literature is available in Azerbaijani — you can read the books here and download them as PDFs.",
     "download": "Download PDF",
     "comingSoon": "Coming soon"
@@ -61,13 +63,15 @@
     "subtitle": "Trainings, groups, and association activities.",
     "seeAll": "See all",
     "pageTitle": "Our work",
-    "pageSubtitle": "Our work — initiatives and programs realized by Ocaq."
+    "pageSubtitle": "Our work — initiatives and programs realized by Ocaq.",
+    "pageDescription": "Our work at Ocaq includes group therapy sessions, training and development seminars, and translation and publishing. Explore the initiatives we have realized in Baku."
   },
   "about": {
     "title": "About us",
     "subtitle": "Our purpose, team, and way of working.",
     "pageTitle": "About us",
     "pageSubtitle": "About us — the founder, purpose, and team of the Ocaq Public Association of Psychotherapists.",
+    "pageDescription": "About us: the Ocaq Public Association of Psychotherapists, founded by Əliağa Həsənov. Learn our purpose, duties, and individual, family, and group therapy formats in Baku.",
     "seeAll": "Read more",
     "founderLabel": "Founder of the Ocaq Psychotherapy Center",
     "founderName": "Əliağa Həsənov",
@@ -114,6 +118,7 @@
   "contact": {
     "title": "Contact",
     "subtitle": "Contact us — write or call with your questions.",
+    "pageDescription": "Contact Ocaq in Baku at Aşıq Alı 2a by phone, WhatsApp, email, or Instagram. Write, call, or send the application form and we will get back to you soon.",
     "phone": "Phone",
     "email": "Email",
     "whatsapp": "Message on WhatsApp",
@@ -160,7 +165,7 @@
   },
   "privacy": {
     "title": "Privacy Policy",
-    "description": "How Ocaq collects, uses, and protects personal data on this website.",
+    "description": "Ocaq privacy policy: how we collect, store, use, and protect personal data on this website, including cookies, your rights, and how to contact us about your information.",
     "updatedLabel": "Last updated",
     "updatedDate": "9 September 2026",
     "intro": "This privacy policy explains how the Ocaq Public Association of Psychotherapists collects, uses, and protects personal data on this website. By using the site or sending the contact form, you acknowledge these terms.",
@@ -247,7 +252,7 @@
   },
   "terms": {
     "title": "Terms & Conditions",
-    "description": "Rules for using the Ocaq website, including liability and content terms.",
+    "description": "Terms and conditions for using the Ocaq website: content, liability, library materials, and acceptable use. By visiting the site you accept these rules.",
     "updatedLabel": "Last updated",
     "updatedDate": "9 September 2026",
     "intro": "These terms and conditions govern use of the Ocaq Public Association of Psychotherapists website. By visiting the site, you accept them. If you do not agree, please do not use the site.",

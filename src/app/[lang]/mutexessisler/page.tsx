@@ -15,7 +15,7 @@ export async function generateMetadata({
   const { lang } = await params;
   return localePageMetadata(lang, routes.specialists, (dict) => ({
     title: dict.specialists.pageTitle,
-    description: dict.specialists.pageSubtitle,
+    description: dict.specialists.pageDescription,
   }));
 }
 

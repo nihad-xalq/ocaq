@@ -10,7 +10,7 @@ import {
   WhatsAppIcon,
 } from "@/components/ui/icons";
 import { WhatsAppLink } from "@/components/ui/WhatsAppLink";
-import { getMailtoHref, getMapsHref, site } from "@/data/site";
+import { getMailtoHref, getMapsHref, site, externalLinkRel } from "@/data/site";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import type { Locale } from "@/i18n/config";
 import { localePath } from "@/i18n/locale-path";
@@ -74,7 +74,7 @@ export function Footer({ locale, dict }: FooterProps) {
               <a
                 href={getMapsHref()}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel={externalLinkRel}
                 className="inline-flex items-start gap-2.5 hover:text-primary transition-colors"
               >
                 <MapPinIcon className="mt-0.5 shrink-0 text-primary" />
@@ -94,7 +94,7 @@ export function Footer({ locale, dict }: FooterProps) {
               <a
                 href={site.instagramUrl}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel={externalLinkRel}
                 className="inline-flex max-w-full min-w-0 items-center gap-2.5 hover:text-primary transition-colors"
               >
                 <InstagramIcon className="shrink-0 text-primary" />

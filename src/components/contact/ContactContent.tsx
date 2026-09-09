@@ -2,7 +2,7 @@ import { ContactChannels } from "@/components/contact/ContactChannels";
 import { ContactForm } from "@/components/form/ContactForm";
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/ui/FadeIn";
-import { getMapsHref, site } from "@/data/site";
+import { getMapsHref, site, externalLinkRel } from "@/data/site";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
 
@@ -38,7 +38,7 @@ export function ContactContent({ locale, dict }: ContactContentProps) {
           <a
             href={getMapsHref()}
             target="_blank"
-            rel="noopener noreferrer"
+            rel={externalLinkRel}
             className="mt-2 inline-block text-base text-secondary transition-colors hover:text-primary-dark"
           >
             {site.address}

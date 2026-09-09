@@ -13,7 +13,7 @@ export async function generateMetadata({
   const { lang } = await params;
   return localePageMetadata(lang, routes.contact, (dict) => ({
     title: dict.contact.title,
-    description: dict.contact.subtitle,
+    description: dict.contact.pageDescription,
   }));
 }
 

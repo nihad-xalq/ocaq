@@ -5,6 +5,7 @@ import type { ComponentProps, ReactNode } from "react";
 import { Button } from "@/components/ui/Button";
 import { useWhatsAppHref } from "@/hooks/use-whatsapp-href";
 import type { WhatsAppMessages } from "@/lib/whatsapp";
+import { externalLinkRel } from "@/data/site";
 
 type WhatsAppLinkProps = Omit<ComponentProps<"a">, "href"> & {
   messages: WhatsAppMessages;
@@ -16,7 +17,7 @@ export function WhatsAppLink({
   message,
   children,
   target = "_blank",
-  rel = "noopener noreferrer",
+  rel = externalLinkRel,
   ...props
 }: WhatsAppLinkProps) {
   const href = useWhatsAppHref(messages, message);
@@ -51,7 +52,7 @@ export function WhatsAppButton({
       variant="whatsapp"
       className={className}
       target="_blank"
-      rel="noopener noreferrer"
+      rel={externalLinkRel}
       onClick={onClick}
     >
       {children}

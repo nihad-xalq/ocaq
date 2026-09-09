@@ -1,6 +1,6 @@
 import { brochurePdf, formatIds, founderImage, teamPhotos } from "@/data/about";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { getMailtoHref, getMapsHref, site } from "@/data/site";
+import { getMailtoHref, getMapsHref, site, externalLinkRel } from "@/data/site";
 import { MailIcon, MapPinIcon } from "@/components/ui/icons";
 import { DutiesGrid } from "@/components/about/DutiesGrid";
 import type { Dictionary } from "@/i18n/get-dictionary";
@@ -44,7 +44,7 @@ export function AboutContent({ locale, dict }: AboutContentProps) {
           <a
             href={getMapsHref()}
             target="_blank"
-            rel="noopener noreferrer"
+            rel={externalLinkRel}
             className="inline-flex min-w-0 items-center gap-2.5 text-sm text-secondary transition-colors hover:text-primary-dark"
           >
             <MapPinIcon className="shrink-0 text-primary-dark" />

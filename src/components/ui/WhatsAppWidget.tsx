@@ -2,6 +2,7 @@
 
 import { useWhatsAppHref } from "@/hooks/use-whatsapp-href";
 import type { WhatsAppMessages } from "@/lib/whatsapp";
+import { externalLinkRel } from "@/data/site";
 
 type WhatsAppWidgetProps = {
   label: string;
@@ -15,7 +16,7 @@ export function WhatsAppWidget({ label, messages }: WhatsAppWidgetProps) {
     <a
       href={href}
       target="_blank"
-      rel="noopener noreferrer"
+      rel={externalLinkRel}
       aria-label={label}
       className="fixed right-5 bottom-5 z-40 flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_0_5px_5px_rgba(0,0,0,0.1)] transition-transform hover:scale-105 hover:bg-[#1ebe57]"
     >

@@ -19,6 +19,9 @@ export type SiteConfig = typeof site;
 
 export const ogImageSize = { width: 1200, height: 630 } as const;
 
+/** Third-party links: WhatsApp, Instagram, Google Maps. */
+export const externalLinkRel = "nofollow noopener noreferrer";
+
 export function getMailtoHref(): string {
   return `mailto:${site.email}`;
 }

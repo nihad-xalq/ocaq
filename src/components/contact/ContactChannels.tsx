@@ -7,7 +7,7 @@ import {
   WhatsAppIcon,
 } from "@/components/ui/icons";
 import { WhatsAppLink } from "@/components/ui/WhatsAppLink";
-import { getMailtoHref, getMapsHref, site } from "@/data/site";
+import { getMailtoHref, getMapsHref, site, externalLinkRel } from "@/data/site";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import { getTelHref } from "@/lib/whatsapp";
 
@@ -67,7 +67,7 @@ export function ContactChannels({ dict }: ContactChannelsProps) {
         <a
           href={site.instagramUrl}
           target="_blank"
-          rel="noopener noreferrer"
+          rel={externalLinkRel}
           className={cardClass}
         >
           <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-primary-soft text-primary-dark">
@@ -86,7 +86,7 @@ export function ContactChannels({ dict }: ContactChannelsProps) {
         <a
           href={getMapsHref()}
           target="_blank"
-          rel="noopener noreferrer"
+          rel={externalLinkRel}
           className={cardClass}
         >
           <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-primary-soft text-primary-dark">
