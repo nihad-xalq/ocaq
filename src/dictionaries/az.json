@@ -5,6 +5,7 @@
   },
   "nav": {
     "home": "Ana səhifə",
+    "about": "Haqqımızda",
     "library": "Kitabxana",
     "specialists": "Mütəxəssislərimiz",
     "works": "İşlərimiz",
@@ -53,6 +54,49 @@
     "pageTitle": "İşlərimiz",
     "pageSubtitle": "Ocağın gerçəkləşdirdiyi işlər və təşəbbüslər."
   },
+  "about": {
+    "title": "Haqqımızda",
+    "subtitle": "Ocağın məqsədi, komandası və iş formatı.",
+    "pageTitle": "Haqqımızda",
+    "pageSubtitle": "Ocaq Psixoterapevtlərin İctimai Birliyinin banisi, məqsədi və komandası.",
+    "seeAll": "Daha ətraflı",
+    "founderLabel": "Ocaq psixoterapiya mərkəzinin banisi",
+    "founderName": "Əliağa Həsənov",
+    "founderRole": "Həkim psixiatr",
+    "founderTribute": "Həyatını psixiatriya elminə həsr etmişdir.",
+    "founderRest": "Allah rəhmət eləsin!",
+    "founderImageAlt": "Əliağa Həsənov — Ocaq psixoterapiya mərkəzinin banisi",
+    "missionTitle": "Məqsədimiz",
+    "missionBody": "Bizim psixoterapiya birliyimiz insanların psixoloji rifahını artırmaq, emosional və psixoloji çətinliklərin aradan qaldırılmasına dəstək olmaq, həmçinin fərdi inkişafı təşviq etmək məqsədilə fəaliyyət göstərir. Mərkəzimizdə müxtəlif psixoterapiya metodları tətbiq olunur və hər bir müraciət edən şəxsə fərdi yanaşma əsas prinsip kimi qəbul edilir.",
+    "missionHighlight": "Birliyin əsas məqsədi psixoterapiya sahəsində araşdırmalar aparmaq və əhalinin tibbi biliklərinin genişləndirilməsinə kömək etməkdən ibarətdir.",
+    "dutiesTitle": "Vəzifələrimiz",
+    "dutiesSubtitle": "Birlik məqsədlərə çatmaq üçün aşağıdakı vəzifələri həyata keçirir.",
+    "duties": {
+      "research": "Tibbi araşdırmalar aparmaq",
+      "education": "Vətəndaşların tibbi biliklərini artırmaq məqsədi ilə maarifçilik işini təşkil etmək",
+      "advances": "Psixoterapiya sahəsindəki qabaqcıl elmi nailiyyətləri öyrənmək",
+      "events": "Elmi araşdırmalar aparır, müxtəlif kurslar və seminarlar, dəyirmi masa və görüşlər, sərgilər təşkil edir, konfranslar, xeyriyyə marafonları, forumlar və sair tədbirlər keçirir."
+    },
+    "formatTitle": "İş formatımız",
+    "formatSubtitle": "Ehtiyacınıza uyğun terapiya forması.",
+    "formats": {
+      "individual": {
+        "title": "Fərdi terapiya",
+        "description": "Şəxsi hekayənizə və tempinizə uyğun, təhlükəsiz məkanda fərdi iş."
+      },
+      "family": {
+        "title": "Ailə terapiyası",
+        "description": "Münasibətləri anlamaq və ailə dinamikasını sağaltmaq üçün birgə iş."
+      },
+      "group": {
+        "title": "Qrup terapiyası",
+        "description": "Paylaşım, dinləmə və birlikdə böyümə üçün dəstəkləyici qrup."
+      }
+    },
+    "teamTitle": "Komandamız",
+    "teamSubtitle": "Ocağın ətrafında toplanan mütəxəssislər.",
+    "teamPhotoAlt": "Ocaq birliyinin komandası"
+  },
   "faq": {
     "title": "Tez-tez verilən suallar",
     "subtitle": "Qrup terapiyası haqqında ən çox soruşulanlar."
@@ -61,6 +105,7 @@
     "title": "Əlaqə",
     "subtitle": "Suallarınız üçün bizə yazın və ya zəng edin.",
     "phone": "Telefon",
+    "email": "E-poçt",
     "whatsapp": "WhatsApp-da yaz",
     "instagram": "Instagram",
     "cta": "Mesaj göndər",
@@ -90,6 +135,7 @@
     }
   },
   "whatsappMessages": {
+    "about": "Haqqınızda məlumat istəyirəm.",
     "therapies": "Terapiyalar haqqında məlumat istəyirəm.",
     "library": "Kitabxana haqqında məlumat istəyirəm.",
     "specialists": "Mütəxəssisləriniz haqqında məlumat istəyirəm.",

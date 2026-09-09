@@ -2,7 +2,7 @@ import { ContactChannels } from "@/components/contact/ContactChannels";
 import { ContactForm } from "@/components/form/ContactForm";
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/ui/FadeIn";
-import { site } from "@/data/site";
+import { getMapsHref, site } from "@/data/site";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
 
@@ -35,6 +35,14 @@ export function ContactContent({ locale, dict }: ContactContentProps) {
           <p className="text-xs font-semibold uppercase tracking-wider text-primary-dark">
             {dict.contact.map}
           </p>
+          <a
+            href={getMapsHref()}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 inline-block text-base text-secondary transition-colors hover:text-primary-dark"
+          >
+            {site.address}
+          </a>
           <div className="mt-4 overflow-hidden rounded-lg border border-border bg-surface">
             <iframe
               src={site.mapsEmbedUrl}

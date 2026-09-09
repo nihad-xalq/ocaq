@@ -29,6 +29,7 @@ export function Header({ locale, dict }: HeaderProps) {
 
   const links = [
     { href: localePath(locale, "/"), label: dict.nav.home },
+    { href: localePath(locale, `/${routes.about}`), label: dict.nav.about },
     {
       href: localePath(locale, `/${routes.specialists}`),
       label: dict.nav.specialists,
@@ -97,7 +98,7 @@ export function Header({ locale, dict }: HeaderProps) {
             />
           </Link>
 
-          <nav className="hidden items-center gap-6 lg:flex" aria-label="Main">
+          <nav className="hidden items-center gap-3 xl:gap-6 lg:flex" aria-label="Main">
             {links.map((link) => {
               const active = isActivePath(pathname, link.href);
 
@@ -107,7 +108,7 @@ export function Header({ locale, dict }: HeaderProps) {
                   href={link.href}
                   aria-current={active ? "page" : undefined}
                   className={cn(
-                    "relative text-sm font-medium transition-colors after:absolute after:inset-x-0 after:-bottom-1 after:h-0.5 after:rounded-full after:bg-primary",
+                    "relative whitespace-nowrap text-[13px] font-medium transition-colors after:absolute after:inset-x-0 after:-bottom-1 after:h-0.5 after:rounded-full after:bg-primary xl:text-sm",
                     active
                       ? "text-secondary after:opacity-100"
                       : "text-muted after:opacity-0 hover:text-secondary",

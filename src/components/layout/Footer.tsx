@@ -2,9 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Container } from "@/components/ui/Container";
-import { InstagramIcon, PhoneIcon, WhatsAppIcon } from "@/components/ui/icons";
+import {
+  InstagramIcon,
+  MailIcon,
+  MapPinIcon,
+  PhoneIcon,
+  WhatsAppIcon,
+} from "@/components/ui/icons";
 import { WhatsAppLink } from "@/components/ui/WhatsAppLink";
-import { site } from "@/data/site";
+import { getMailtoHref, getMapsHref, site } from "@/data/site";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import type { Locale } from "@/i18n/config";
 import { localePath } from "@/i18n/locale-path";
@@ -56,6 +62,26 @@ export function Footer({ locale, dict }: FooterProps) {
               </a>
             </li>
             <li>
+              <a
+                href={getMailtoHref()}
+                className="inline-flex min-w-0 items-center gap-2.5 hover:text-primary transition-colors"
+              >
+                <MailIcon className="shrink-0 text-primary" />
+                <span className="break-all">{site.email}</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href={getMapsHref()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-start gap-2.5 hover:text-primary transition-colors"
+              >
+                <MapPinIcon className="mt-0.5 shrink-0 text-primary" />
+                <span>{site.address}</span>
+              </a>
+            </li>
+            <li>
               <WhatsAppLink
                 messages={dict.whatsappMessages}
                 className="inline-flex items-center gap-2.5 hover:text-primary transition-colors"
@@ -83,6 +109,14 @@ export function Footer({ locale, dict }: FooterProps) {
             {dict.nav.home}
           </p>
           <ul className="mt-4 space-y-2 text-sm text-white/80">
+            <li>
+              <Link
+                href={localePath(locale, `/${routes.about}`)}
+                className="hover:text-primary transition-colors"
+              >
+                {dict.nav.about}
+              </Link>
+            </li>
             <li>
               <Link
                 href={localePath(locale, `/${routes.specialists}`)}

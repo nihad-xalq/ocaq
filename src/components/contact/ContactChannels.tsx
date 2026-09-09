@@ -1,11 +1,13 @@
 import { FadeIn } from "@/components/ui/FadeIn";
 import {
   InstagramIcon,
+  MailIcon,
+  MapPinIcon,
   PhoneIcon,
   WhatsAppIcon,
 } from "@/components/ui/icons";
 import { WhatsAppLink } from "@/components/ui/WhatsAppLink";
-import { site } from "@/data/site";
+import { getMailtoHref, getMapsHref, site } from "@/data/site";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import { getTelHref } from "@/lib/whatsapp";
 
@@ -48,6 +50,20 @@ export function ContactChannels({ dict }: ContactChannelsProps) {
           </span>
         </WhatsAppLink>
 
+        <a href={getMailtoHref()} className={cardClass}>
+          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-primary-soft text-primary-dark">
+            <MailIcon />
+          </span>
+          <span className="min-w-0 flex-1">
+            <span className="block text-xs font-semibold uppercase tracking-wider text-primary-dark">
+              {dict.contact.email}
+            </span>
+            <span className="mt-1.5 block break-all font-medium text-secondary">
+              {site.email}
+            </span>
+          </span>
+        </a>
+
         <a
           href={site.instagramUrl}
           target="_blank"
@@ -63,6 +79,25 @@ export function ContactChannels({ dict }: ContactChannelsProps) {
             </span>
             <span className="mt-1.5 block break-all font-medium text-secondary">
               {site.instagramHandle}
+            </span>
+          </span>
+        </a>
+
+        <a
+          href={getMapsHref()}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={cardClass}
+        >
+          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-primary-soft text-primary-dark">
+            <MapPinIcon />
+          </span>
+          <span className="min-w-0 flex-1">
+            <span className="block text-xs font-semibold uppercase tracking-wider text-primary-dark">
+              {dict.contact.map}
+            </span>
+            <span className="mt-1.5 block font-medium text-secondary">
+              {site.address}
             </span>
           </span>
         </a>

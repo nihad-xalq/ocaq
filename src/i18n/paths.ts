@@ -1,5 +1,6 @@
 export const routes = {
   home: "",
+  about: "haqqimizda",
   library: "kitabxana",
   specialists: "mutexessisler",
   works: "islerimiz",

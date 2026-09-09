@@ -4,6 +4,7 @@ import { routes } from "@/i18n/paths";
 
 export type WhatsAppMessages = {
   therapies: string;
+  about: string;
   library: string;
   specialists: string;
   works: string;
@@ -31,6 +32,7 @@ export function whatsappMessageForPath(
 ): string {
   const path = stripLocaleFromPathname(pathname).pathname;
 
+  if (matchesRoute(path, routes.about)) return messages.about;
   if (matchesRoute(path, routes.library)) return messages.library;
   if (matchesRoute(path, routes.specialists)) return messages.specialists;
   if (matchesRoute(path, routes.works)) return messages.works;

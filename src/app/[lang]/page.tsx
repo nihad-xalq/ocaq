@@ -1,6 +1,7 @@
 import { ContactCta } from "@/components/home/ContactCta";
 import { FaqSection } from "@/components/home/FaqSection";
 import { Hero } from "@/components/home/Hero";
+import { AboutPreview } from "@/components/home/AboutPreview";
 import { LibraryPreview } from "@/components/home/LibraryPreview";
 import { ServicesSection } from "@/components/home/ServicesSection";
 import { SpecialistsPreview } from "@/components/home/SpecialistsPreview";
@@ -19,6 +20,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
   return (
     <>
       <Hero locale={locale} dict={dict} />
+      <AboutPreview locale={locale} dict={dict} />
       <ServicesSection dict={dict} />
       <SpecialistsPreview locale={locale} dict={dict} />
       <LibraryPreview locale={locale} dict={dict} />

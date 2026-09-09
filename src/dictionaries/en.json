@@ -5,6 +5,7 @@
   },
   "nav": {
     "home": "Home",
+    "about": "About",
     "library": "Library",
     "specialists": "Our Specialists",
     "works": "Our Work",
@@ -53,6 +54,49 @@
     "pageTitle": "Our work",
     "pageSubtitle": "Initiatives and programs realized by Ocaq."
   },
+  "about": {
+    "title": "About us",
+    "subtitle": "Our purpose, team, and way of working.",
+    "pageTitle": "About us",
+    "pageSubtitle": "The founder, purpose, and team of the Ocaq Public Association of Psychotherapists.",
+    "seeAll": "Read more",
+    "founderLabel": "Founder of the Ocaq Psychotherapy Center",
+    "founderName": "Əliağa Həsənov",
+    "founderRole": "Psychiatrist",
+    "founderTribute": "He dedicated his life to the science of psychiatry.",
+    "founderRest": "May he rest in peace.",
+    "founderImageAlt": "Əliağa Həsənov — founder of the Ocaq Psychotherapy Center",
+    "missionTitle": "Our purpose",
+    "missionBody": "Our psychotherapy association works to improve people’s psychological well-being, support them in overcoming emotional and psychological difficulties, and encourage personal development. We apply a range of psychotherapy methods, and an individual approach to every person who comes to us is a core principle.",
+    "missionHighlight": "The association’s main purpose is to conduct research in psychotherapy and to help broaden the public’s medical knowledge.",
+    "dutiesTitle": "What we do",
+    "dutiesSubtitle": "To reach these goals, the association carries out the following work.",
+    "duties": {
+      "research": "Conduct medical research",
+      "education": "Organize educational work to increase citizens’ medical knowledge",
+      "advances": "Study leading scientific achievements in psychotherapy",
+      "events": "Carry out scientific research and hold courses, seminars, round tables, meetings, exhibitions, conferences, charity marathons, forums, and other events."
+    },
+    "formatTitle": "How we work",
+    "formatSubtitle": "Therapy formats matched to your needs.",
+    "formats": {
+      "individual": {
+        "title": "Individual therapy",
+        "description": "One-to-one work in a safe space, at a pace that fits your story."
+      },
+      "family": {
+        "title": "Family therapy",
+        "description": "Joint work to understand relationships and heal family dynamics."
+      },
+      "group": {
+        "title": "Group therapy",
+        "description": "A supportive group for sharing, listening, and growing together."
+      }
+    },
+    "teamTitle": "Our team",
+    "teamSubtitle": "Specialists gathered around the hearth.",
+    "teamPhotoAlt": "The Ocaq association team"
+  },
   "faq": {
     "title": "Frequently asked questions",
     "subtitle": "What people ask most about group therapy."
@@ -61,6 +105,7 @@
     "title": "Contact",
     "subtitle": "Write or call us with your questions.",
     "phone": "Phone",
+    "email": "Email",
     "whatsapp": "Message on WhatsApp",
     "instagram": "Instagram",
     "cta": "Send a message",
@@ -90,6 +135,7 @@
     }
   },
   "whatsappMessages": {
+    "about": "I would like to get information about Ocaq.",
     "therapies": "I would like to get information about the therapies.",
     "library": "I would like to get information about the library.",
     "specialists": "I would like to get information about your specialists.",
