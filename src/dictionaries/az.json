@@ -325,6 +325,11 @@
     "language": "Dil",
     "dismiss": "Bağla"
   },
+  "cookieNotice": {
+    "message": "Yalnız zəruri kukilərdən istifadə edirik.",
+    "privacyLink": "Məxfilik",
+    "ok": "Anladım"
+  },
   "notFound": {
     "title": "Səhifə tapılmadı",
     "description": "Axtardığınız səhifə mövcud deyil və ya ünvan dəyişib.",

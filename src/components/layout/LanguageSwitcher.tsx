@@ -1,12 +1,11 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useEffect, useId, useRef, useState } from "react";
-
 import { localeLabels, localeNames, locales, type Locale } from "@/i18n/config";
 import { localePath, stripLocaleFromPathname } from "@/i18n/locale-path";
+import { useEffect, useId, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
+import Image from "next/image";
+import Link from "next/link";
 import { cn } from "@/lib/cn";
 
 const localeFlags: Record<Locale, string> = {

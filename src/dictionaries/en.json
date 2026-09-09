@@ -325,6 +325,11 @@
     "language": "Language",
     "dismiss": "Close"
   },
+  "cookieNotice": {
+    "message": "We only use necessary cookies.",
+    "privacyLink": "Privacy",
+    "ok": "OK"
+  },
   "notFound": {
     "title": "Page not found",
     "description": "The page you are looking for does not exist or has been moved.",

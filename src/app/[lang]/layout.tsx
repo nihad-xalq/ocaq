@@ -4,6 +4,7 @@ import {
   openGraphLocales,
   type Locale,
 } from "@/i18n/config";
+import { CookieNotice } from "@/components/layout/CookieNotice";
 import { DocumentLang } from "@/components/layout/DocumentLang";
 import { WhatsAppWidget } from "@/components/ui/WhatsAppWidget";
 import { BackToTop } from "@/components/ui/BackToTop";
@@ -79,6 +80,11 @@ export default async function LangLayout({
           messages={dict.whatsappMessages}
         />
         <BackToTop label={dict.common.backToTop} />
+        <CookieNotice
+          locale={locale}
+          copy={dict.cookieNotice}
+          dismissLabel={dict.common.dismiss}
+        />
       </ToastProvider>
     </>
   );
