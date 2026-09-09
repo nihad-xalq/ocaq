@@ -82,7 +82,10 @@
       "error": "Göndərmək alınmadı. Bir az sonra yenidən cəhd edin.",
       "required": "Bu xana mütləqdir.",
       "invalidPhone": "Düzgün telefon nömrəsi daxil edin.",
-      "invalidEmail": "Düzgün e-poçt ünvanı daxil edin."
+      "invalidEmail": "Düzgün e-poçt ünvanı daxil edin.",
+      "privacyNoteBefore": "Göndərməklə ",
+      "privacyLink": "məxfilik siyasətimiz",
+      "privacyNoteAfter": " ilə razılaşırsınız."
     }
   },
   "whatsappMessages": {
@@ -95,7 +98,176 @@
   },
   "footer": {
     "rights": "Bütün hüquqlar qorunur.",
-    "tagline": "Birlikdə isinmək, birlikdə sağalmaq."
+    "tagline": "Birlikdə isinmək, birlikdə sağalmaq.",
+    "legal": "Hüquqi"
+  },
+  "privacy": {
+    "title": "Məxfilik siyasəti",
+    "description": "Ocaq saytında şəxsi məlumatların necə toplanması, istifadə olunması və qorunması.",
+    "updatedLabel": "Son yenilənmə",
+    "updatedDate": "9 sentyabr 2026",
+    "intro": "Bu siyasət Ocaq Psixoterapevtlərin İctimai Birliyinin veb-saytında şəxsi məlumatlarınızın necə toplanıldığını, istifadə olunduğunu və qorunduğunu izah edir. Saytdan istifadə etməklə və ya müraciət formu göndərməklə bu qaydalarla tanış olduğunuzu qəbul edirsiniz.",
+    "sections": [
+      {
+        "title": "Operator kimdir",
+        "paragraphs": [
+          "Şəxsi məlumatların operatoru Ocaq Psixoterapevtlərin İctimai Birliyidir. Sayt Azərbaycan Respublikasında fəaliyyət göstərən birliyin rəsmi veb-səhifəsidir.",
+          "Suallarınız və məlumatlarınızla bağlı müraciətlər üçün telefon, WhatsApp və ya saytdakı əlaqə formundan istifadə edə bilərsiniz."
+        ]
+      },
+      {
+        "title": "Hansı məlumatları toplayırıq",
+        "paragraphs": [
+          "Saytı sadəcə oxuduqda ad, telefon və ya e-poçt kimi şəxsi məlumat tələb olunmur. Müraciət formu göndərdikdə isə aşağıdakı məlumatları toplayırıq:"
+        ],
+        "items": [
+          "Ad və soyad",
+          "Telefon nömrəsi",
+          "E-poçt ünvanı (istəyə bağlı)",
+          "Mesaj mətni (istəyə bağlı)",
+          "Müraciətin göndərildiyi dil"
+        ]
+      },
+      {
+        "title": "Məlumatları necə istifadə edirik",
+        "paragraphs": [
+          "Topladığımız məlumatları yalnız sizin müraciətinizə cavab vermək, xidmətlər haqqında məlumat vermək və əlaqəni təşkil etmək üçün istifadə edirik. Marketinq siyahısı yaratmırıq və məlumatlarınızı satmırıq."
+        ]
+      },
+      {
+        "title": "Harada saxlanılır və kimlərlə paylaşılır",
+        "paragraphs": [
+          "Əlaqə formasındakı müraciətlər cavab vermək üçün Google xidmətlərində (o cümlədən Google Cədvəllər) saxlanıla bilər. Bu xidmətlər məlumatları Azərbaycan xaricində emal edə bilər.",
+          "WhatsApp, Instagram və Google Xəritə kimi üçüncü tərəf xidmətlərinə keçid etdikdə həmin platformaların öz məxfilik qaydaları tətbiq olunur. Biz onların topladığı məlumatlara nəzarət etmirik."
+        ]
+      },
+      {
+        "title": "Kukilər və oxşar texnologiyalar",
+        "paragraphs": [
+          "Saytın özü reklam və ya analitika kukiləri yerləşdirmir. Dil seçimi ünvan sətirində saxlanılır.",
+          "Əlaqə səhifəsindəki xəritə kimi üçüncü tərəf yerləşdirmələri texniki kukilər qoya bilər. Bu, həmin xidmətlərin işləməsi üçündür."
+        ]
+      },
+      {
+        "title": "Terapiya və klinik məxfilik",
+        "paragraphs": [
+          "Saytdakı müraciət formu terapiya seansı deyil və təcili tibbi və ya psixoloji yardım kanalı deyil. Formada yazdığınız məlumat klinik kartınızın bir hissəsi hesab olunmur.",
+          "Terapiya prosesində toplanan klinik məlumatlar peşəkar məxfilik qaydalarına uyğun, bu veb-saytdan ayrı saxlanılır."
+        ]
+      },
+      {
+        "title": "Saxlama müddəti",
+        "paragraphs": [
+          "Əlaqə müraciətlərini sorğunuzu cavablandırmaq və zəruri olduğu qədər saxlayırıq. Daha sonra məlumatlar silinir və ya şəxsiyyəti müəyyən etməyəcək şəkildə saxlanılır."
+        ]
+      },
+      {
+        "title": "Sizin hüquqlarınız",
+        "paragraphs": [
+          "Azərbaycan Respublikasının fərdi məlumatlar haqqında qanunvericiliyinə uyğun olaraq, şəxsi məlumatlarınıza baxmaq, onları düzəltmək və ya silinməsini xahiş etmək hüququnuz var. Bunun üçün bizə telefon, WhatsApp və ya əlaqə formu vasitəsilə müraciət edin."
+        ]
+      },
+      {
+        "title": "Uşaqlar",
+        "paragraphs": [
+          "Sayt uşaqlardan bilərəkdən şəxsi məlumat toplamır. 18 yaşdan kiçik şəxsin məlumatının bizə göndərildiyini öyrənsək, həmin məlumatı siləcəyik."
+        ]
+      },
+      {
+        "title": "Dəyişikliklər",
+        "paragraphs": [
+          "Bu siyasəti vaxtaşırı yeniləyə bilərik. Yenilənmiş mətn bu səhifədə dərc olunur və yuxarıdakı tarix dəyişdirilir."
+        ]
+      },
+      {
+        "title": "Əlaqə",
+        "paragraphs": [
+          "Məxfiliklə bağlı suallar üçün saytdakı əlaqə səhifəsindən, göstərilən telefon nömrəsindən və ya WhatsApp-dan yazın."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "title": "İstifadə qaydaları",
+    "description": "Ocaq saytından istifadə qaydaları, məsuliyyət və məzmunla bağlı şərtlər.",
+    "updatedLabel": "Son yenilənmə",
+    "updatedDate": "9 sentyabr 2026",
+    "intro": "Bu qaydalar Ocaq Psixoterapevtlərin İctimai Birliyinin veb-saytından istifadəni tənzimləyir. Sayta daxil olmaqla bu şərtləri qəbul etmiş olursunuz. Razı deyilsinizsə, saytdan istifadə etməyin.",
+    "sections": [
+      {
+        "title": "Sayt haqqında",
+        "paragraphs": [
+          "Bu sayt birliyin fəaliyyəti, xidmətləri, mütəxəssisləri, kitabxanası və təşəbbüsləri haqqında məlumat verir. Məzmun məlumat xarakteri daşıyır və vaxtaşırı yenilənə bilər."
+        ]
+      },
+      {
+        "title": "Tibbi məsləhət deyil",
+        "paragraphs": [
+          "Saytdakı mətnlər, suallar-cavablar və kitabxana materialları ümumi məlumat üçündür. Onlar fərdi diaqnoz, müalicə planı və ya təcili yardım əvəzi deyil.",
+          "Böhran, özünə zərər riski və ya təcili tibbi vəziyyət olduqda təcili yardım xidmətlərinə müraciət edin. Əlaqə formu və WhatsApp təcili yardım kanalları deyil."
+        ]
+      },
+      {
+        "title": "Əlaqə formu",
+        "paragraphs": [
+          "Formada doğru məlumat verməyiniz xahiş olunur. Göndərilən müraciət xidmətə avtomatik qəbul və ya terapiya müqaviləsi sayılmır. Cavab müddəti yükdən asılı olaraq dəyişə bilər."
+        ]
+      },
+      {
+        "title": "Kitabxana və müəllif hüququ",
+        "paragraphs": [
+          "Kitabxanadakı tərcümə və nəşrlər Ocaq Psixoterapevtlərin İctimai Birliyinə məxsusdur və ya birlik tərəfindən yayımlanır. Materialları şəxsi, qeyri-kommersiya oxumaq və yükləmək olar.",
+          "Kitabların surətinin çıxarılması, yenidən nəşri, kommersiya yayımı və ya məzmunun icazəsiz dəyişdirilməsi qadağandır."
+        ]
+      },
+      {
+        "title": "Əqli mülkiyyət",
+        "paragraphs": [
+          "Saytdakı mətnlər, dizayn, loqo, fotoşəkillər və digər materiallar qanunla qorunur. Əvvəlcədən yazılı icazə olmadan onların surətinin çıxarılması və ya yayılması qadağandır."
+        ]
+      },
+      {
+        "title": "Qəbul olunan istifadə",
+        "paragraphs": [
+          "Saytdan qanuni və hörmətli şəkildə istifadə etməlisiniz. Aşağıdakılar qadağandır:"
+        ],
+        "items": [
+          "Saytın işini pozmaq və ya icazəsiz daxil olmaq",
+          "Yanlış, təhqiredici və ya qanunsuz məlumat göndərmək",
+          "Başqasının şəxsi məlumatını onun razılığı olmadan ötürmək"
+        ]
+      },
+      {
+        "title": "Üçüncü tərəf xidmətləri",
+        "paragraphs": [
+          "WhatsApp, Instagram və Google Xəritə kimi xarici xidmətlərə keçidlər sizin rahatlığınız üçündür. Həmin platformaların şərtləri və məxfilik siyasətləri ayrıca tətbiq olunur. Onların məzmununa və əlçatanlığına görə məsuliyyət daşımırıq."
+        ]
+      },
+      {
+        "title": "Məsuliyyətin məhdudlaşdırılması",
+        "paragraphs": [
+          "Sayt «olduğu kimi» təqdim olunur. Texniki fasilə, köhnəlmiş məlumat və ya üçüncü tərəf xidmətlərinin işləməməsi nəticəsində yaranan dolayı zərərə görə, qanunun icazə verdiyi həddə, məsuliyyət daşımırıq."
+        ]
+      },
+      {
+        "title": "Dəyişikliklər",
+        "paragraphs": [
+          "Bu qaydaları yeniləyə bilərik. Dəyişikliklər bu səhifədə dərc olunduqdan sonra qüvvəyə minir. Saytdan istifadəyə davam etməklə yenilənmiş şərtləri qəbul edirsiniz."
+        ]
+      },
+      {
+        "title": "Tətbiq olunan hüquq",
+        "paragraphs": [
+          "Bu qaydalar Azərbaycan Respublikasının qanunvericiliyinə tabedir. Mübahisələr qanunla nəzərdə tutulan qaydada həll olunur."
+        ]
+      },
+      {
+        "title": "Əlaqə",
+        "paragraphs": [
+          "Qaydalarla bağlı suallar üçün saytdakı əlaqə səhifəsindən, göstərilən telefon nömrəsindən və ya WhatsApp-dan yazın."
+        ]
+      }
+    ]
   },
   "common": {
     "backToTop": "Yuxarı qalx",

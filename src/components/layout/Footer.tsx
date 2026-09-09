@@ -120,11 +120,27 @@ export function Footer({ locale, dict }: FooterProps) {
       </Container>
 
       <div className="border-t border-white/10">
-        <Container className="flex flex-col gap-2 py-5 text-xs text-white/50 sm:flex-row sm:justify-between">
-          <span>
-            © {year} {site.name}. {dict.footer.rights}
-          </span>
-          <span className="text-white/40">{site.fullName}</span>
+        <Container className="flex flex-col gap-3 py-5 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex flex-col gap-1">
+            <span>
+              © {year} {site.name}. {dict.footer.rights}
+            </span>
+            <span className="text-white/40">{site.fullName}</span>
+          </div>
+          <nav className="flex flex-wrap gap-x-4 gap-y-2" aria-label={dict.footer.legal}>
+            <Link
+              href={localePath(locale, `/${routes.privacy}`)}
+              className="hover:text-primary transition-colors"
+            >
+              {dict.privacy.title}
+            </Link>
+            <Link
+              href={localePath(locale, `/${routes.terms}`)}
+              className="hover:text-primary transition-colors"
+            >
+              {dict.terms.title}
+            </Link>
+          </nav>
         </Container>
       </div>
     </footer>

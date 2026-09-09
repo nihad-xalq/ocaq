@@ -82,7 +82,10 @@
       "error": "Could not send your request. Please try again in a moment.",
       "required": "This field is required.",
       "invalidPhone": "Enter a valid phone number.",
-      "invalidEmail": "Enter a valid email address."
+      "invalidEmail": "Enter a valid email address.",
+      "privacyNoteBefore": "By sending this form, you agree to our ",
+      "privacyLink": "Privacy Policy",
+      "privacyNoteAfter": "."
     }
   },
   "whatsappMessages": {
@@ -95,7 +98,176 @@
   },
   "footer": {
     "rights": "All rights reserved.",
-    "tagline": "Warmth shared, healing shared."
+    "tagline": "Warmth shared, healing shared.",
+    "legal": "Legal"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "description": "How Ocaq collects, uses, and protects personal data on this website.",
+    "updatedLabel": "Last updated",
+    "updatedDate": "9 September 2026",
+    "intro": "This policy explains how the Ocaq Public Association of Psychotherapists collects, uses, and protects personal data on this website. By using the site or sending the contact form, you acknowledge these terms.",
+    "sections": [
+      {
+        "title": "Who we are",
+        "paragraphs": [
+          "The data controller is the Ocaq Public Association of Psychotherapists. This website is the association’s public site, based in the Republic of Azerbaijan.",
+          "For questions about your data, you can reach us by phone, WhatsApp, or the contact form on this site."
+        ]
+      },
+      {
+        "title": "What data we collect",
+        "paragraphs": [
+          "Browsing the site does not require your name, phone number, or email. When you send the contact form, we collect:"
+        ],
+        "items": [
+          "Full name",
+          "Phone number",
+          "Email address (optional)",
+          "Message text (optional)",
+          "The language used to submit the request"
+        ]
+      },
+      {
+        "title": "How we use the data",
+        "paragraphs": [
+          "We use this information only to respond to your request, share information about our services, and arrange contact. We do not build marketing lists and we do not sell your data."
+        ]
+      },
+      {
+        "title": "Where it is stored and who we share it with",
+        "paragraphs": [
+          "Contact form submissions may be stored in Google services (including Google Sheets) so we can reply. Those services may process data outside Azerbaijan.",
+          "If you follow links to WhatsApp, Instagram, or Google Maps, those platforms apply their own privacy policies. We do not control the data they collect."
+        ]
+      },
+      {
+        "title": "Cookies and similar technologies",
+        "paragraphs": [
+          "This site does not set advertising or analytics cookies of its own. Language preference is kept in the page address.",
+          "Third-party embeds, such as the map on the contact page, may set technical cookies needed for those services to work."
+        ]
+      },
+      {
+        "title": "Therapy and clinical confidentiality",
+        "paragraphs": [
+          "The website contact form is not a therapy session and is not a channel for emergency medical or psychological help. Information you write in the form is not part of a clinical record.",
+          "Clinical information gathered during therapy is kept under professional confidentiality, separately from this website."
+        ]
+      },
+      {
+        "title": "How long we keep data",
+        "paragraphs": [
+          "We keep contact requests for as long as needed to answer you and for any related follow-up. After that, the data is deleted or stored in a form that no longer identifies you."
+        ]
+      },
+      {
+        "title": "Your rights",
+        "paragraphs": [
+          "Under the personal data laws of the Republic of Azerbaijan, you may ask to access, correct, or delete your personal data. Contact us by phone, WhatsApp, or the contact form to make a request."
+        ]
+      },
+      {
+        "title": "Children",
+        "paragraphs": [
+          "We do not knowingly collect personal data from children. If we learn that information about someone under 18 was sent to us, we will delete it."
+        ]
+      },
+      {
+        "title": "Changes",
+        "paragraphs": [
+          "We may update this policy from time to time. The revised text is published on this page and the date above is changed."
+        ]
+      },
+      {
+        "title": "Contact",
+        "paragraphs": [
+          "For privacy questions, use the contact page on this site, the phone number shown there, or WhatsApp."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms & Conditions",
+    "description": "Rules for using the Ocaq website, including liability and content terms.",
+    "updatedLabel": "Last updated",
+    "updatedDate": "9 September 2026",
+    "intro": "These terms govern use of the Ocaq Public Association of Psychotherapists website. By visiting the site, you accept them. If you do not agree, please do not use the site.",
+    "sections": [
+      {
+        "title": "About the site",
+        "paragraphs": [
+          "This site provides information about the association’s work, services, specialists, library, and initiatives. The content is informational and may be updated from time to time."
+        ]
+      },
+      {
+        "title": "Not medical advice",
+        "paragraphs": [
+          "Texts, FAQs, and library materials on this site are general information. They are not a personal diagnosis, treatment plan, or a substitute for emergency care.",
+          "If you are in crisis, at risk of self-harm, or facing a medical emergency, contact emergency services. The contact form and WhatsApp are not emergency channels."
+        ]
+      },
+      {
+        "title": "Contact form",
+        "paragraphs": [
+          "Please provide accurate details in the form. Sending a request is not automatic enrolment in a service or a therapy contract. Response times may vary with demand."
+        ]
+      },
+      {
+        "title": "Library and copyright",
+        "paragraphs": [
+          "Translations and publications in the library belong to, or are published by, the Ocaq Public Association of Psychotherapists. You may read and download them for personal, non-commercial use.",
+          "Copying, republishing, commercial distribution, or altering the materials without permission is not allowed."
+        ]
+      },
+      {
+        "title": "Intellectual property",
+        "paragraphs": [
+          "Texts, design, logo, photographs, and other materials on this site are protected by law. Copying or distributing them without prior written permission is not allowed."
+        ]
+      },
+      {
+        "title": "Acceptable use",
+        "paragraphs": [
+          "You must use the site lawfully and respectfully. The following is not allowed:"
+        ],
+        "items": [
+          "Disrupting the site or attempting unauthorized access",
+          "Sending false, abusive, or unlawful information",
+          "Submitting someone else’s personal data without their consent"
+        ]
+      },
+      {
+        "title": "Third-party services",
+        "paragraphs": [
+          "Links to WhatsApp, Instagram, and Google Maps are provided for convenience. Those platforms have their own terms and privacy policies. We are not responsible for their content or availability."
+        ]
+      },
+      {
+        "title": "Limitation of liability",
+        "paragraphs": [
+          "The site is provided “as is”. To the extent permitted by law, we are not liable for indirect loss arising from downtime, outdated information, or third-party services failing to work."
+        ]
+      },
+      {
+        "title": "Changes",
+        "paragraphs": [
+          "We may update these terms. Changes take effect when published on this page. Continued use of the site means you accept the updated terms."
+        ]
+      },
+      {
+        "title": "Governing law",
+        "paragraphs": [
+          "These terms are governed by the laws of the Republic of Azerbaijan. Disputes are resolved as provided by law."
+        ]
+      },
+      {
+        "title": "Contact",
+        "paragraphs": [
+          "For questions about these terms, use the contact page on this site, the phone number shown there, or WhatsApp."
+        ]
+      }
+    ]
   },
   "common": {
     "backToTop": "Back to top",

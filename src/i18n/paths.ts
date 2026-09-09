@@ -4,6 +4,8 @@ export const routes = {
   specialists: "mutexessisler",
   works: "islerimiz",
   contact: "elaqe",
+  privacy: "mexfilik",
+  terms: "qaydalar",
 } as const;
 
 export type RouteKey = keyof typeof routes;

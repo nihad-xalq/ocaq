@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { EmailInput } from "@/components/form/EmailInput";
 import { PhoneInput } from "@/components/form/PhoneInput";
 import { TextareaInput } from "@/components/form/TextareaInput";
@@ -9,6 +11,8 @@ import { useToast } from "@/components/ui/Toast";
 import { useForm } from "@/hooks/use-form";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
+import { localePath } from "@/i18n/locale-path";
+import { routes } from "@/i18n/paths";
 import {
   emptyContactForm,
   submitContactForm,
@@ -80,6 +84,17 @@ export function ContactForm({ copy, locale }: ContactFormProps) {
       >
         {isSubmitting ? copy.submitting : copy.submit}
       </Button>
+
+      <p className="mt-3 text-xs leading-relaxed text-muted">
+        {copy.privacyNoteBefore}
+        <Link
+          href={localePath(locale, `/${routes.privacy}`)}
+          className="underline decoration-border underline-offset-2 transition-colors hover:text-secondary"
+        >
+          {copy.privacyLink}
+        </Link>
+        {copy.privacyNoteAfter}
+      </p>
     </form>
   );
 }

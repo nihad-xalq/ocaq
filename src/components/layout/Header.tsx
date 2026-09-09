@@ -38,6 +38,17 @@ export function Header({ locale, dict }: HeaderProps) {
     { href: localePath(locale, `/${routes.contact}`), label: dict.nav.contact },
   ];
 
+  const legalLinks = [
+    {
+      href: localePath(locale, `/${routes.privacy}`),
+      label: dict.privacy.title,
+    },
+    {
+      href: localePath(locale, `/${routes.terms}`),
+      label: dict.terms.title,
+    },
+  ];
+
   useEffect(() => {
     setOpen(false);
   }, [pathname]);
@@ -237,6 +248,29 @@ export function Header({ locale, dict }: HeaderProps) {
                     active
                       ? "bg-primary-soft text-primary-dark"
                       : "text-secondary hover:bg-primary-soft",
+                  )}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
+
+            <div className="my-3 h-px bg-border" aria-hidden="true" />
+
+            {legalLinks.map((link) => {
+              const active = isActivePath(pathname, link.href);
+
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  aria-current={active ? "page" : undefined}
+                  onClick={() => setOpen(false)}
+                  className={cn(
+                    "rounded-xl px-3 py-2.5 text-sm transition-colors",
+                    active
+                      ? "bg-primary-soft text-primary-dark"
+                      : "text-muted hover:bg-primary-soft hover:text-secondary",
                   )}
                 >
                   {link.label}
