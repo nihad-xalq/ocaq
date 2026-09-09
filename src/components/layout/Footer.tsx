@@ -48,7 +48,7 @@ export function Footer({ locale, dict }: FooterProps) {
         </div>
 
         <div>
-          <p className="text-sm font-semibold uppercase tracking-wider text-primary">
+          <p className="text-sm font-semibold uppercase tracking-wider text-accent">
             {dict.nav.contact}
           </p>
           <ul className="mt-4 space-y-3 text-sm text-white/80">
@@ -105,7 +105,7 @@ export function Footer({ locale, dict }: FooterProps) {
         </div>
 
         <div>
-          <p className="text-sm font-semibold uppercase tracking-wider text-primary">
+          <p className="text-sm font-semibold uppercase tracking-wider text-accent">
             {dict.nav.home}
           </p>
           <ul className="mt-4 space-y-2 text-sm text-white/80">
@@ -159,7 +159,7 @@ export function Footer({ locale, dict }: FooterProps) {
             <span>
               © {year} {site.name}. {dict.footer.rights}
             </span>
-            <span className="text-white/40">{site.fullName}</span>
+            <span className="text-white/70">{site.fullName}</span>
           </div>
           <nav className="flex flex-wrap gap-x-4 gap-y-2" aria-label={dict.footer.legal}>
             <Link

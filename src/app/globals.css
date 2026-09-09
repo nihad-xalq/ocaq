@@ -5,9 +5,10 @@
   --color-primary: #5e8b8a;
   --color-primary-dark: #4a7372;
   --color-primary-soft: #eaf2f1;
-  /* Mid teal for the hero CTA — between dusty primary and the brighter accent */
+  /* Bright teal — readable on the dark footer */
   --color-accent: #3fa6a3;
-  --color-accent-dark: #348f8c;
+  --color-accent-dark: #2a7a78;
+  --color-accent-darker: #246866;
   /* Slate for headings */
   --color-secondary: #3a4550;
   --color-secondary-soft: #4e5b68;
@@ -29,6 +30,7 @@
   --color-primary-soft: var(--color-primary-soft);
   --color-accent: var(--color-accent);
   --color-accent-dark: var(--color-accent-dark);
+  --color-accent-darker: var(--color-accent-darker);
   --color-secondary: var(--color-secondary);
   --color-secondary-soft: var(--color-secondary-soft);
   --color-footer: var(--color-footer);
