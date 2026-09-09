@@ -92,6 +92,7 @@ export function Header({ locale, dict }: HeaderProps) {
               alt={site.name}
               priority
               loading="eager"
+              fetchPriority="high"
               fill
               sizes="144px"
               className="object-contain object-left"
