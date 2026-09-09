@@ -25,7 +25,7 @@
     "brand": "Ocaq",
     "tagline": "Public Association of Psychotherapists",
     "headline": "It is better to light a candle than to curse the darkness",
-    "description": "Rediscover inner strength through individual and group therapy.",
+    "description": "That is our work: it is better to light a candle than to curse the darkness. Rediscover inner strength through individual and group therapy.",
     "ctaPrimary": "Get in touch",
     "ctaSecondary": "Our services",
     "imageAlt": "The Ocaq team of specialists",
@@ -44,14 +44,14 @@
     "subtitle": "Meet the team.",
     "seeAll": "See all",
     "pageTitle": "Our specialists",
-    "pageSubtitle": "Psychotherapists of the Ocaq association."
+    "pageSubtitle": "Our specialists — psychotherapists of the Ocaq association."
   },
   "library": {
     "title": "Library",
     "subtitle": "Books we translated and prepared from Russian into Azerbaijani.",
     "seeAll": "See all",
     "pageTitle": "Library",
-    "pageSubtitle": "Books translated and published by Ocaq.",
+    "pageSubtitle": "Library — books translated and published by Ocaq.",
     "pageIntro": "Every book in this library was translated from Russian into Azerbaijani and published by the Ocaq Public Association of Psychotherapists. We do this so professional literature is available in Azerbaijani — you can read the books here and download them as PDFs.",
     "download": "Download PDF",
     "comingSoon": "Coming soon"
@@ -61,13 +61,13 @@
     "subtitle": "Trainings, groups, and association activities.",
     "seeAll": "See all",
     "pageTitle": "Our work",
-    "pageSubtitle": "Initiatives and programs realized by Ocaq."
+    "pageSubtitle": "Our work — initiatives and programs realized by Ocaq."
   },
   "about": {
     "title": "About us",
     "subtitle": "Our purpose, team, and way of working.",
     "pageTitle": "About us",
-    "pageSubtitle": "The founder, purpose, and team of the Ocaq Public Association of Psychotherapists.",
+    "pageSubtitle": "About us — the founder, purpose, and team of the Ocaq Public Association of Psychotherapists.",
     "seeAll": "Read more",
     "founderLabel": "Founder of the Ocaq Psychotherapy Center",
     "founderName": "Əliağa Həsənov",
@@ -113,7 +113,7 @@
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Write or call us with your questions.",
+    "subtitle": "Contact us — write or call with your questions.",
     "phone": "Phone",
     "email": "Email",
     "whatsapp": "Message on WhatsApp",
@@ -163,7 +163,7 @@
     "description": "How Ocaq collects, uses, and protects personal data on this website.",
     "updatedLabel": "Last updated",
     "updatedDate": "9 September 2026",
-    "intro": "This policy explains how the Ocaq Public Association of Psychotherapists collects, uses, and protects personal data on this website. By using the site or sending the contact form, you acknowledge these terms.",
+    "intro": "This privacy policy explains how the Ocaq Public Association of Psychotherapists collects, uses, and protects personal data on this website. By using the site or sending the contact form, you acknowledge these terms.",
     "sections": [
       {
         "title": "Who we are",
@@ -250,7 +250,7 @@
     "description": "Rules for using the Ocaq website, including liability and content terms.",
     "updatedLabel": "Last updated",
     "updatedDate": "9 September 2026",
-    "intro": "These terms govern use of the Ocaq Public Association of Psychotherapists website. By visiting the site, you accept them. If you do not agree, please do not use the site.",
+    "intro": "These terms and conditions govern use of the Ocaq Public Association of Psychotherapists website. By visiting the site, you accept them. If you do not agree, please do not use the site.",
     "sections": [
       {
         "title": "About the site",

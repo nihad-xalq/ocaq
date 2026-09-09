@@ -24,8 +24,8 @@
   "hero": {
     "brand": "Ocaq",
     "tagline": "\"Ocaq\" Psixoterapevtlərin İctimai Birliyi",
-    "headline": "Qaranlığı lənətləməkdənsə,\n1 şam yandır",
-    "description": "Fərdi və qrup terapiyası ilə daxili gücü yenidən tapın.",
+    "headline": "Qaranlığı lənətləməkdənsə,\nbir şam yandır",
+    "description": "Bu Ocağın prinsipidir: qaranlığı lənətləməkdənsə bir şam yandır. Fərdi və qrup terapiyası ilə daxili gücü yenidən tapın.",
     "ctaPrimary": "Əlaqə saxla",
     "ctaSecondary": "Xidmətlərimiz",
     "imageAlt": "Ocaq birliyinin mütəxəssisləri",
@@ -44,15 +44,15 @@
     "subtitle": "Komandamızla tanış olun.",
     "seeAll": "Hamısına bax",
     "pageTitle": "Mütəxəssislərimiz",
-    "pageSubtitle": "Ocaq birliyinin psixoterapevtləri."
+    "pageSubtitle": "Mütəxəssislərimiz — Ocaq birliyinin psixoterapevtləri."
   },
   "library": {
     "title": "Kitabxana",
     "subtitle": "Rus dilindən Azərbaycan dilinə tərcümə etdiyimiz və hazırladığımız kitablar.",
     "seeAll": "Hamısına bax",
     "pageTitle": "Kitabxana",
-    "pageSubtitle": "Ocağın tərcümə edib nəşr etdiyi kitablar.",
-    "pageIntro": "Bu kitabxanadakı bütün materiallar Ocaq Psixoterapevtlərin İctimai Birliyi tərəfindən rus dilindən Azərbaycan dilinə tərcümə edilmiş və nəşr olunmuşdur. Məqsədimiz peşəkar ədəbiyyatı Azərbaycan dilində əlçatan etməkdir — kitablardan oxuya və PDF şəklində yükləyə bilərsiniz.",
+    "pageSubtitle": "Kitabxana — Ocağın tərcümə edib nəşr etdiyi kitablar.",
+    "pageIntro": "Kitabxana materiallarının hamısı Ocaq Psixoterapevtlərin İctimai Birliyi tərəfindən rus dilindən Azərbaycan dilinə tərcümə edilmiş və nəşr olunmuşdur. Məqsədimiz peşəkar ədəbiyyatı Azərbaycan dilində əlçatan etməkdir — kitablardan oxuya və PDF şəklində yükləyə bilərsiniz.",
     "download": "PDF yüklə",
     "comingSoon": "Tezliklə"
   },
@@ -61,13 +61,13 @@
     "subtitle": "Təlimlər, qruplar və birlik fəaliyyətləri.",
     "seeAll": "Hamısına bax",
     "pageTitle": "İşlərimiz",
-    "pageSubtitle": "Ocağın gerçəkləşdirdiyi işlər və təşəbbüslər."
+    "pageSubtitle": "İşlərimiz — Ocağın gerçəkləşdirdiyi təşəbbüslər və proqramlar."
   },
   "about": {
     "title": "Haqqımızda",
     "subtitle": "Ocağın məqsədi, komandası və iş formatı.",
     "pageTitle": "Haqqımızda",
-    "pageSubtitle": "Ocaq Psixoterapevtlərin İctimai Birliyinin banisi, məqsədi və komandası.",
+    "pageSubtitle": "Haqqımızda — Ocaq Psixoterapevtlərin İctimai Birliyinin banisi, məqsədi və komandası.",
     "seeAll": "Daha ətraflı",
     "founderLabel": "Ocaq psixoterapiya mərkəzinin banisi",
     "founderName": "Əliağa Həsənov",
@@ -113,7 +113,7 @@
   },
   "contact": {
     "title": "Əlaqə",
-    "subtitle": "Suallarınız üçün bizə yazın və ya zəng edin.",
+    "subtitle": "Əlaqə üçün yazın və ya zəng edin.",
     "phone": "Telefon",
     "email": "E-poçt",
     "whatsapp": "WhatsApp-da yaz",
@@ -163,7 +163,7 @@
     "description": "Ocaq saytında şəxsi məlumatların necə toplanması, istifadə olunması və qorunması.",
     "updatedLabel": "Son yenilənmə",
     "updatedDate": "9 sentyabr 2026",
-    "intro": "Bu siyasət Ocaq Psixoterapevtlərin İctimai Birliyinin veb-saytında şəxsi məlumatlarınızın necə toplanıldığını, istifadə olunduğunu və qorunduğunu izah edir. Saytdan istifadə etməklə və ya müraciət formu göndərməklə bu qaydalarla tanış olduğunuzu qəbul edirsiniz.",
+    "intro": "Bu məxfilik siyasəti Ocaq Psixoterapevtlərin İctimai Birliyinin veb-saytında şəxsi məlumatlarınızın necə toplanıldığını, istifadə olunduğunu və qorunduğunu izah edir. Saytdan istifadə etməklə və ya müraciət formu göndərməklə bu qaydalarla tanış olduğunuzu qəbul edirsiniz.",
     "sections": [
       {
         "title": "Operator kimdir",
@@ -250,7 +250,7 @@
     "description": "Ocaq saytından istifadə qaydaları, məsuliyyət və məzmunla bağlı şərtlər.",
     "updatedLabel": "Son yenilənmə",
     "updatedDate": "9 sentyabr 2026",
-    "intro": "Bu qaydalar Ocaq Psixoterapevtlərin İctimai Birliyinin veb-saytından istifadəni tənzimləyir. Sayta daxil olmaqla bu şərtləri qəbul etmiş olursunuz. Razı deyilsinizsə, saytdan istifadə etməyin.",
+    "intro": "Bu istifadə qaydaları Ocaq Psixoterapevtlərin İctimai Birliyinin veb-saytından istifadəni tənzimləyir. Sayta daxil olmaqla bu şərtləri qəbul etmiş olursunuz. Razı deyilsinizsə, saytdan istifadə etməyin.",
     "sections": [
       {
         "title": "Sayt haqqında",
