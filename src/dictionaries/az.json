@@ -326,8 +326,9 @@
     "dismiss": "Bağla"
   },
   "cookieNotice": {
-    "message": "Yalnız zəruri kukilərdən istifadə edirik.",
-    "privacyLink": "Məxfilik",
+    "before": "Yalnız zəruri kukilərdən istifadə edirik — ətraflı ",
+    "privacyLink": "məxfilik siyasətində",
+    "after": ".",
     "ok": "Anladım"
   },
   "notFound": {

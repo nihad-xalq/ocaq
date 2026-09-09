@@ -326,8 +326,9 @@
     "dismiss": "Close"
   },
   "cookieNotice": {
-    "message": "We only use necessary cookies.",
-    "privacyLink": "Privacy",
+    "before": "We only use necessary cookies, as described in our ",
+    "privacyLink": "privacy policy",
+    "after": ".",
     "ok": "OK"
   },
   "notFound": {

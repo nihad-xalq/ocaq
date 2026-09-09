@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/Button";
 import { localePath } from "@/i18n/locale-path";
 import type { Locale } from "@/i18n/config";
 import { routes } from "@/i18n/paths";
+import { cn } from "@/lib/cn";
 import Link from "next/link";
 
 const STORAGE_KEY = "ocaq.cookie-notice";
@@ -89,7 +90,10 @@ export function CookieNotice({
     <div
       role="status"
       aria-live="polite"
-      className="toast-in-up fixed bottom-5 left-4 right-19 z-50 max-w-sm rounded-xl border border-primary/25 bg-surface px-4 py-3 shadow-[0_16px_40px_-18px_rgba(30,37,44,0.35)] sm:right-auto sm:left-5"
+      className={cn(
+        "toast-in-up fixed bottom-5 left-4 right-20 z-50 rounded-xl border border-primary/25 bg-surface px-3 py-2.5 shadow-[0_16px_40px_-18px_rgba(30,37,44,0.35)]",
+        "sm:right-auto sm:left-5 sm:w-max sm:max-w-[calc(100vw-2.5rem)] sm:px-4 sm:py-3",
+      )}
       onMouseEnter={() => {
         pausedRef.current = true;
         clearHideTimer();
@@ -110,9 +114,9 @@ export function CookieNotice({
         startHideTimer();
       }}
     >
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-start">
-        <p className="min-w-0 flex-1 pt-0.5 text-sm leading-relaxed text-secondary">
-          {copy.message}{" "}
+      <div className="flex flex-col gap-0 sm:flex-row sm:items-center sm:gap-12">
+        <p className="text-sm leading-relaxed text-secondary sm:whitespace-nowrap sm:leading-snug">
+          {copy.before}
           <Link
             href={localePath(locale, `/${routes.privacy}`)}
             onClick={dismiss}
@@ -120,6 +124,7 @@ export function CookieNotice({
           >
             {copy.privacyLink}
           </Link>
+          {copy.after}
         </p>
         <div className="flex shrink-0 items-center justify-end gap-1">
           <Button type="button" onClick={dismiss} className="px-3 py-1 text-xs">
