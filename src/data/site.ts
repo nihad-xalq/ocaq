@@ -2,6 +2,7 @@ export const site = {
   name: "Ocaq",
   fullName: "Ocaq Psixoterapevtlərin İctimai Birliyi",
   logo: "/logo.jpg",
+  ogImage: "/og.jpeg",
   heroImage: "/specialists/team-photo-1.jpeg",
   phoneDisplay: "050 358 46 99",
   phoneTel: "+994503584699",
@@ -13,3 +14,16 @@ export const site = {
 } as const;
 
 export type SiteConfig = typeof site;
+
+export const ogImageSize = { width: 1200, height: 630 } as const;
+
+/** Absolute origin for Open Graph / canonical URLs. */
+export function getSiteUrl(): URL {
+  const explicit = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+  if (explicit) return new URL(explicit);
+
+  const vercel = process.env.VERCEL_PROJECT_PRODUCTION_URL?.trim();
+  if (vercel) return new URL(`https://${vercel}`);
+
+  return new URL("http://localhost:3000");
+}

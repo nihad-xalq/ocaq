@@ -1,7 +1,14 @@
 import { Fraunces, Source_Sans_3 } from "next/font/google";
+import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
+import { getSiteUrl } from "@/data/site";
+
 import "./globals.css";
+
+export const metadata: Metadata = {
+  metadataBase: getSiteUrl(),
+};
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",

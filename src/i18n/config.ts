@@ -18,6 +18,12 @@ export const localeNames: Record<Locale, string> = {
   ru: "Русский",
 };
 
+export const openGraphLocales: Record<Locale, string> = {
+  az: "az_AZ",
+  en: "en_US",
+  ru: "ru_RU",
+};
+
 export function isLocale(value: string): value is Locale {
   return locales.includes(value as Locale);
 }
