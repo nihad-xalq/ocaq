@@ -1,9 +1,9 @@
-export const founderImage = "/aliaga-hasanov.png";
+export const founderImage = "/aliaga-hasanov.webp";
 
 export const teamPhotos: { id: string; src: string }[] = [
-  { id: "team-1", src: "/specialists/team-photo-1.jpeg" },
-  { id: "team-2", src: "/specialists/team-photo-2.jpeg" },
-  { id: "team-3", src: "/specialists/team-photo-3.jpeg" },
+  { id: "team-1", src: "/specialists/team-photo-1.webp" },
+  { id: "team-2", src: "/specialists/team-photo-2.webp" },
+  { id: "team-3", src: "/specialists/team-photo-3.webp" },
 ];
 
 export const dutyIds = [

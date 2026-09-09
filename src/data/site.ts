@@ -1,9 +1,9 @@
 export const site = {
   name: "Ocaq",
   fullName: "Ocaq Psixoterapevtlərin İctimai Birliyi",
-  logo: "/logo.jpg",
-  ogImage: "/og.jpeg",
-  heroImage: "/specialists/team-photo-1.jpeg",
+  logo: "/logo.webp",
+  ogImage: "/og.webp",
+  heroImage: "/specialists/team-photo-1.webp",
   phoneDisplay: "050 358 46 99",
   phoneTel: "+994503584699",
   email: "ocag.psixoterapiya.merkezi@gmail.com",

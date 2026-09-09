@@ -4,17 +4,17 @@ export const works: WorkItem[] = [
   {
     id: "work-1",
     dictionaryKey: "placeholder1",
-    image: "/works/work-1.jpeg",
+    image: "/works/work-1.webp",
   },
   {
     id: "work-2",
     dictionaryKey: "placeholder2",
-    image: "/works/work-2.jpeg",
+    image: "/works/work-2.webp",
   },
   {
     id: "work-3",
     dictionaryKey: "placeholder3",
-    image: "/works/work-3.jpeg",
+    image: "/works/work-3.webp",
   },
 ];
 
