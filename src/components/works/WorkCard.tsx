@@ -1,5 +1,6 @@
 import type { Dictionary } from "@/i18n/get-dictionary";
 import type { WorkItem } from "@/types/content";
+import Image from "next/image";
 import { cn } from "@/lib/cn";
 
 type WorkCardProps = {
@@ -19,7 +20,17 @@ export function WorkCard({ work, dict, className }: WorkCardProps) {
         className,
       )}
     >
-      <div className="aspect-[16/10] bg-gradient-to-tr from-secondary/90 via-secondary-soft to-primary/50 transition-transform duration-500 group-hover:scale-[1.02]" />
+      <div className="relative aspect-16/10 overflow-hidden bg-linear-to-r from-secondary/90 via-secondary-soft to-primary/50 transition-transform duration-500 group-hover:scale-[1.02]">
+        {work.image ? (
+          <Image
+            src={work.image}
+            alt={item.title}
+            fill
+            className="object-cover"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
+        ) : null}
+      </div>
       <div className="p-5">
         <p className="text-xs font-semibold uppercase tracking-wider text-primary-dark">
           {item.category}
