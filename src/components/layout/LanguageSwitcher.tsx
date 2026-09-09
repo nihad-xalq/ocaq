@@ -58,7 +58,7 @@ export function LanguageSwitcher({ locale, label }: LanguageSwitcherProps) {
         aria-controls={menuId}
         onClick={() => setOpen((value) => !value)}
         className={cn(
-          "inline-flex h-10 items-center gap-1.5 rounded-xl border border-border bg-surface px-3.5 text-[13px] font-semibold tracking-[0.12em] text-secondary transition-all duration-200 cursor-pointer",
+          "inline-flex h-8 items-center gap-1.5 rounded-lg border border-border bg-surface px-3.5 text-[13px] font-semibold tracking-[0.12em] text-secondary transition-all duration-200 cursor-pointer",
           "hover:border-primary/55 hover:bg-primary-soft hover:text-primary-dark",
           "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary",
           open && "border-primary/60 bg-primary-soft text-primary-dark",
