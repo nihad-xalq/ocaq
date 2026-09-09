@@ -80,6 +80,7 @@
       "submitting": "Göndərilir...",
       "success": "Müraciətiniz qəbul olundu. Tezliklə sizinlə əlaqə saxlayacağıq.",
       "error": "Göndərmək alınmadı. Bir az sonra yenidən cəhd edin.",
+      "rateLimited": "Çox sayda müraciət göndərildi. Bir az sonra yenidən cəhd edin.",
       "required": "Bu xana mütləqdir.",
       "invalidPhone": "Düzgün telefon nömrəsi daxil edin.",
       "invalidEmail": "Düzgün e-poçt ünvanı daxil edin.",
@@ -131,7 +132,8 @@
       {
         "title": "Məlumatları necə istifadə edirik",
         "paragraphs": [
-          "Topladığımız məlumatları yalnız sizin müraciətinizə cavab vermək, xidmətlər haqqında məlumat vermək və əlaqəni təşkil etmək üçün istifadə edirik. Marketinq siyahısı yaratmırıq və məlumatlarınızı satmırıq."
+          "Topladığımız məlumatları yalnız sizin müraciətinizə cavab vermək, xidmətlər haqqında məlumat vermək və əlaqəni təşkil etmək üçün istifadə edirik. Marketinq siyahısı yaratmırıq və məlumatlarınızı satmırıq.",
+          "Saytı spamdan qorumaq üçün müraciət zamanı IP ünvanı kimi texniki məlumatlardan müvəqqəti istifadə oluna bilər. Bu məlumat mesajınızla birlikdə saxlanılmır."
         ]
       },
       {

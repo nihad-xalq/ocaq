@@ -2,6 +2,8 @@ import type { FormErrors } from "@/hooks/use-form";
 import { isLocale, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/get-dictionary";
 
+export const CONTACT_HONEYPOT_FIELD = "fax";
+
 export type ContactFormValues = {
   fullName: string;
   phone: string;
@@ -12,6 +14,13 @@ export type ContactFormValues = {
 export type ContactSubmission = ContactFormValues & {
   locale: Locale;
 };
+
+export type ContactSubmitMeta = {
+  token: string;
+  honeypot: string;
+};
+
+export type ContactSubmitResult = "ok" | "rate-limited" | "error";
 
 export const emptyContactForm: ContactFormValues = {
   fullName: "",
@@ -81,9 +90,9 @@ export function parseContactSubmission(input: unknown): ContactSubmission | null
   }
 
   const values: ContactFormValues = {
-    fullName: fullName.trim(),
-    phone: phone.trim(),
-    email: email.trim(),
+    fullName: fullName.trim().slice(0, 120),
+    phone: phone.trim().slice(0, 32),
+    email: email.trim().slice(0, 254),
     message: message.trim().slice(0, 2000),
   };
 
@@ -92,14 +101,50 @@ export function parseContactSubmission(input: unknown): ContactSubmission | null
   return { ...values, locale };
 }
 
+export async function fetchContactFormToken(): Promise<string | null> {
+  try {
+    const response = await fetch("/api/contact", {
+      method: "GET",
+      cache: "no-store",
+    });
+    if (!response.ok) return null;
+
+    const data: unknown = await response.json();
+    if (!data || typeof data !== "object") return null;
+
+    const token = (data as { token?: unknown }).token;
+    return typeof token === "string" && token ? token : null;
+  } catch {
+    return null;
+  }
+}
+
 export async function submitContactForm(
   submission: ContactSubmission,
-): Promise<boolean> {
-  const response = await fetch("/api/contact", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(submission),
-  });
+  meta: ContactSubmitMeta,
+): Promise<ContactSubmitResult> {
+  const hadToken = Boolean(meta.token);
+  const token = meta.token || (await fetchContactFormToken());
+  if (!token) return "error";
+  if (!hadToken) {
+    await new Promise((resolve) => setTimeout(resolve, 1100));
+  }
 
-  return response.ok;
+  try {
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        ...submission,
+        token,
+        [CONTACT_HONEYPOT_FIELD]: meta.honeypot,
+      }),
+    });
+
+    if (response.status === 429) return "rate-limited";
+    if (!response.ok) return "error";
+    return "ok";
+  } catch {
+    return "error";
+  }
 }

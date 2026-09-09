@@ -80,6 +80,7 @@
       "submitting": "Sending...",
       "success": "Your request was received. We will get back to you soon.",
       "error": "Could not send your request. Please try again in a moment.",
+      "rateLimited": "Too many requests. Please wait a moment and try again.",
       "required": "This field is required.",
       "invalidPhone": "Enter a valid phone number.",
       "invalidEmail": "Enter a valid email address.",
@@ -131,7 +132,8 @@
       {
         "title": "How we use the data",
         "paragraphs": [
-          "We use this information only to respond to your request, share information about our services, and arrange contact. We do not build marketing lists and we do not sell your data."
+          "We use this information only to respond to your request, share information about our services, and arrange contact. We do not build marketing lists and we do not sell your data.",
+          "To stop spam, we may temporarily use technical data such as your IP address when you send the form. This is not stored with your message."
         ]
       },
       {
