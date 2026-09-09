@@ -118,7 +118,7 @@ export function LanguageSwitcher({ locale, label }: LanguageSwitcherProps) {
             >
               <Image
                 src={localeFlags[code]}
-                alt=""
+                alt={localeNames[code]}
                 width={20}
                 height={20}
                 className="size-5 shrink-0 object-contain"
